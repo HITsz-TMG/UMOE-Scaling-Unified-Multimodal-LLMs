@@ -82,7 +82,7 @@ After downloading all of them, organize the weights as follows in 'UMOE/checkpoi
 ## 🌈 How to inference
 
 1. Make sure that all the weights and downloaded and environment are set correctly.
-2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_speech.sh) or run the following commands to inference:
+2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_speech.sh) ```bash inference_audio.sh``````bash inference_speech.sh```or run the following commands to inference:
 ```
 cd /path/to/UMOE
 conda activate umoe
