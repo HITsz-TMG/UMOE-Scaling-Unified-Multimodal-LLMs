@@ -20,7 +20,7 @@ Uni-MoE is a multi-modal framework which is capable of processing diverse modali
 ## 🔥 News
 - [4/17] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
-**Usage and License Notices**: The data and checkpoint is intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
+**Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
 
 ## 🌟 Structure
 
@@ -50,7 +50,7 @@ pip install -r env.txt
 
 3. Change all the Absolute Pathnames: "/path/to/" to your own path to UMOE file
 
-## ⚡️ UMOE Weights
+## ⚡️ Uni-MOE Weights
 
 To use our model, all weights should be downloaded.
 
@@ -81,7 +81,7 @@ After downloading all of them, organize the weights as follows in 'UMOE/checkpoi
 
 ## 🌈 How to inference
 
-1. Make use that all the weights and downloaded and environment is set correctly.
+1. Make sure that all the weights and downloaded and environment are set correctly.
 2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_speech.sh) or run the following commands to inference:
 ```
 cd /path/to/UMOE
