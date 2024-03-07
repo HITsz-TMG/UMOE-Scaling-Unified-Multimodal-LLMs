@@ -31,11 +31,14 @@ The model architecture of UMOE is shown below. Three training stages contain: 1)
 ## ⚡️ Install
 
 The following instructions are for linux installation.
+We recommend the requirements as follows.
+* Python == 3.9.16
+* CUDA Version >= 11.7
 
 1. Clone this repository and navigate to UMOE folder
 ```bash
 git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
-cd UMOE
+cd UMOE-Scaling-Unified-Multimodal-LLMs/UMOE
 ```
 
 2. Install Package
@@ -45,14 +48,30 @@ conda activate umoe
 pip install -r env.txt
 ```
 
-3. Change all the paths: "/path/to/" to your own path to UMOE file
+3. Change all the Absolute Pathnames: "/path/to/" to your own path to UMOE file
 
 ## ⚡️ UMOE Weights
 
-All weights should be place in the 'UMOE/checkpoint' folder
+To use our model, all weights should be downloaded.
 
-UMOE-audio can be downloaded from: [base model](url) and [fine-tuned chekpoint](url).
-UMOE-speech can be downloaded from: [base model](url) and [fine-tuned chekpoint](url).
+After downloading all of them, organize the weights as follows in 'UMOE/checkpoint' folder:
+```
+└── checkpoint
+    ├── UMOE-audio-base
+    ├── UMOE-audio-e2
+    ├── UMOE-speech-base
+    ├── UMOE-speech-e2
+    ├── clip-vit-large-patch14-336
+    ├── whisper-small
+    └── BEATs_iter3_plus_AS2M.pt
+```
+| Model  | Checkpoint |
+|----------|-----------|
+| UMOE-audio-base-model | [UMOE/UMOE-audio-base](https://huggingface.co/UMOE/UMOE-audio-base) |
+| UMOE-audio-fine-tuned-chekpoint | [UMOE/UMOE-audio-e2](https://huggingface.co/UMOE/UMOE-audio-e2) |
+| UMOE-speech-base-model | [UMOE/UMOE-speech-base](https://huggingface.co/UMOE/UMOE-speech-base) |
+| UMOE-speech-fine-tuned-chekpoint | [UMOE/UMOE-speech-e2](https://huggingface.co/UMOE/UMOE-speech-e2) |
+* UMOE-speech refers to the MOE-Task2 and UMOE-audio refers to the MOE-Task3 in our paper.
 
 ## ⚡️ Encoder Weights
 
@@ -63,7 +82,18 @@ UMOE-speech can be downloaded from: [base model](url) and [fine-tuned chekpoint]
 ## 🌈 How to inference
 
 1. Make use that all the weights and downloaded and environment is set correctly.
-2. run inference scripts: [`inference_audio.sh`](url) or [`inference_speech.sh`](url).
+2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/UMOE/inference_speech.sh) or run the following commands to inference:
+```
+cd /path/to/UMOE
+conda activate umoe
+python umoe_audio/inference_all.py
+```
+```
+cd /path/to/UMOE
+conda activate umoe
+python umoe_speech/inference_all.py
+```
+
 
 ## 🌈 How to train and evaluate
 
