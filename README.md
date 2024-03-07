@@ -8,7 +8,7 @@
 <h5 align="center">
 
 🚀 Welcome to the repo of **UMOE**!
-UMoE is a multi-modal framework which is capable of processing diverse modalities, including audio, image, text, and video. Specifically, our approach integrates multimodal experts within the transformer blocks of LLMs, comprising: 1) a shared self-attention mechanism for all modalities, 2) modality-specific experts derived from feed-forward networks, and 3) a sparse routing mechanism for allocating token-level expert attention.
+Uni-MoE is a multi-modal framework which is capable of processing diverse modalities, including audio, image, text, and video. Specifically, our approach integrates multimodal experts within the transformer blocks of LLMs, comprising: 1) a shared self-attention mechanism for all modalities, 2) modality-specific experts derived from feed-forward networks, and 3) a sparse routing mechanism for allocating token-level expert attention.
 
 [![Project Page](https://img.shields.io/badge/Project_Page-todo-blue)](todo)
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
@@ -20,7 +20,7 @@ UMoE is a multi-modal framework which is capable of processing diverse modalitie
 
 
 ## 🔥 News
-- [4/17] 🔥 We released **UMOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
+- [4/17] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
 **Usage and License Notices**: The data and checkpoint is intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
 
@@ -28,7 +28,7 @@ UMoE is a multi-modal framework which is capable of processing diverse modalitie
 
 The model architecture of UMOE is shown below. Three training stages contain: 1) Utilize pairs from different modalities and languages to build connectors that map these elements to a unified language space, establishing a foundation for multimodal understanding; 2) Develop modality-specific experts using cross-modal data to ensure deep understanding, preparing for a cohesive multi-expert model; 3) Incorporate multiple trained experts into LLMs and refine the unified multimodal model using the LoRA technique on mixed multimodal data.
 
-<div align=center><img src="resource/model.png" height="100%" width="75%"/></div>
+<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/model.png" height="100%" width="75%"/></div>
 
 ## ⚡️ Install
 
