@@ -67,17 +67,23 @@ After downloading all of them, organize the weights as follows in 'UMOE/checkpoi
 ```
 | Model  | Checkpoint |
 |----------|-----------|
+| vision encoder | [CLIP ViT-L/14 336px](https://huggingface.co/openai/clip-vit-large-patch14-336/tree/main) |
+| speech encoder | [whisper small](https://huggingface.co/openai/whisper-small/tree/main) |
+| audio encoder  | [Fine-tuned BEATs_iter3+ (AS2M)](https://valle.blob.core.windows.net/share/BEATs/BEATs_iter3_plus_AS2M.pt?sv=2020-08-04&st=2023-03-01T07%3A51%3A05Z&se=2033-03-02T07%3A51%3A00Z&sr=c&sp=rl&sig=QJXmSJG9DbMKf48UDIU1MfzIro8HQOf3sqlNXiflY1I%3D) |
 | UMOE-audio-base-model | [UMOE/UMOE-audio-base](https://huggingface.co/UMOE/UMOE-audio-base) |
 | UMOE-audio-fine-tuned-chekpoint | [UMOE/UMOE-audio-e2](https://huggingface.co/UMOE/UMOE-audio-e2) |
 | UMOE-speech-base-model | [UMOE/UMOE-speech-base](https://huggingface.co/UMOE/UMOE-speech-base) |
 | UMOE-speech-fine-tuned-chekpoint | [UMOE/UMOE-speech-e2](https://huggingface.co/UMOE/UMOE-speech-e2) |
 * UMOE-speech refers to the MOE-Task2 and UMOE-audio refers to the MOE-Task3 in our paper.
 
-## ⚡️ Encoder Weights
+## 🗝️ Dataset
 
-1. Download vision encoder [CLIP ViT-L/14 336px](https://huggingface.co/openai/clip-vit-large-patch14-336/tree/main).
-3. Download speech encoder [whisper small](https://huggingface.co/openai/whisper-small/tree/main).
-4. Download audio encoder [Fine-tuned BEATs_iter3+ (AS2M)](https://valle.blob.core.windows.net/share/BEATs/BEATs_iter3_plus_AS2M.pt?sv=2020-08-04&st=2023-03-01T07%3A51%3A05Z&se=2033-03-02T07%3A51%3A00Z&sr=c&sp=rl&sig=QJXmSJG9DbMKf48UDIU1MfzIro8HQOf3sqlNXiflY1I%3D).
+### Training Data
+
+
+### Evaluation Data
+
+
 
 ## 🌈 How to inference
 
