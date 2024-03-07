@@ -88,13 +88,13 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 ## 🌈 How to inference
 
 1. Make sure that all the weights and downloaded and environment are set correctly.
-2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_speech.sh) ```bash inference_audio.sh``````bash inference_speech.sh```or run the following commands to inference:
-```
+2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_speech.sh) using ```bash inference_audio.sh``` ```bash inference_speech.sh```or run the following commands to inference:
+```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
 python Uni_MoE_audio/inference_all.py
 ```
-```
+```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
 python Uni_MoE_speech/inference_all.py
@@ -107,12 +107,28 @@ Training:
 1. Make use that all the weights and downloaded and environment is set correctly, especially the base model.
 2. Our training data can be downloaded from: [UMOE-Speech-453k.json](url) and [UMOE-Cap-453k.json](url).
 3. Relevant vision and audio files: [todo](url)
-4. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url), remember to modify the training set with your own preference.
+4. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
 
 Evaluation:
 1. Make use that all the weights and downloaded and environment is set correctly.
 2. Prepare the evaluation set using the form as [`samples.json`](url).
-3. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url), remember to set the right data_type and output filename.
+3. Run evaluation scripts: [`eval_audio.sh`](url) or [`eval_speech.sh`](url) using ```bash eval_audio.sh``` ```bash eval_speech.sh``` or run the following commands to eval:
+```bash
+cd /path/to/Uni_MoE
+conda activate unimoe
+python Uni_MoE_audio/eval.py\
+ --data_path /path/to/clotho.json\
+ --data_type clothov1\
+ --output test.json
+```
+```bash
+cd /path/to/Uni_MoE
+conda activate unimoe
+python Uni_MoE_speech/eval.py\
+ --data_path /path/to/vqa_eval.json\
+ --data_type vqa\
+ --output test.json
+```
 
 ## Citation
 
