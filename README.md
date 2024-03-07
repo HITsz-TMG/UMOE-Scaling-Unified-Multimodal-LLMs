@@ -1,4 +1,3 @@
-# UMOE-Scaling-Unified-Multimodal-LLMs
 
 <p align="center">
     <img src="https://s21.ax1x.com/2024/03/07/pFrOw9A.jpg" width="250" style="margin-bottom: 0.2;"/>
