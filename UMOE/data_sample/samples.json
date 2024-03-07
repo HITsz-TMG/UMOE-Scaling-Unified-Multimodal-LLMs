@@ -1,0 +1,116 @@
+[
+    {
+        "voice": [
+            "/path/to/file.mp3"
+        ],
+        "image": "/path/to/file.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What is in the motorcyclist's mouth?\n<image>"
+            },
+            {
+                "from": "gpt",
+                "value": "cigarette"
+            }
+        ]
+    },
+    {
+        "voice": [
+            "/path/to/file.wav"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<audio>\nGenerate audio caption."
+            },
+            {
+                "from": "gpt",
+                "value": "A machine whines and squeals while rhythmically punching or stamping."
+            }
+        ]
+    },
+    {
+        "voice": [
+            "/path/to/file.mp3"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<audio>\nListen to the article and answer the question: According to the passage, Switzerland is famous for  _  ."
+            },
+            {
+                "from": "gpt",
+                "value": "its environment"
+            }
+        ]
+    },
+    {
+        "video": [
+            "/path/to/frame_000.jpg",
+            "/path/to/frame_001.jpg",
+            "/path/to/frame_002.jpg",
+            "/path/to/frame_003.jpg",
+            "/path/to/frame_004.jpg",
+            "/path/to/frame_005.jpg",
+            "/path/to/frame_006.jpg",
+            "/path/to/frame_007.jpg"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<audio>\n<video>\nCan you describe in detail what happens in the video?"
+            },
+            {
+                "from": "gpt",
+                "value": "In the video, we see a man dribbling a basketball in the first scene, possibly as a warm-up or working on his dribbling technique. It is unclear whether he is alone or with others, but he looks focused on his task. In the second scene, he continues to practice basketball by dribbling the ball then jumping to make a shot. Though we cannot determine if the man hits the shot, his form is excellent. It is unclear if the video is promoting a sports team or a basketball training program, but it ends with words on the screen which could be credits or a message related to sports or the value of basketball."
+            }
+        ],
+        "voice": [
+            "/path/to/audio.mp3"
+        ]
+    },
+    {
+        "image": "/path/to/COCO.jpg",
+        "voice": [
+            "/path/to/audio/2/036013/0.mp3",
+            "/path/to/audio/3/036013/2.mp3",
+            "/path/to/audio/3/036013/4.mp3",
+            "/path/to/audio/2/036013/6.mp3"
+        ],
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\n<audio>"
+            },
+            {
+                "from": "gpt",
+                "value": "In the image, I can see a cat and a large gray dog."
+            },
+            {
+                "from": "human",
+                "value": "<audio>"
+            },
+            {
+                "from": "gpt",
+                "value": "The cat and dog are sitting next to each other on top of a bed or blanket. The cat is sniffing the dog, and it might look like the cat is biting the dog, but it is not. They are both situated in front of an entertainment table or desk with a monitor or TV on it."
+            },
+            {
+                "from": "human",
+                "value": "<audio>"
+            },
+            {
+                "from": "gpt",
+                "value": "The image seems to be taken in a living room or bedroom with an entertainment area, as there is a TV or monitor placed on a desk or table nearby."
+            },
+            {
+                "from": "human",
+                "value": "<audio>"
+            },
+            {
+                "from": "gpt",
+                "value": "The cat and the dog appear to be getting along well in the image, with the cat sniffing the dog and both of them sitting next to each other. There is no sign of aggression or discomfort between the two animals, suggesting a peaceful coexistence or even friendship."
+            }
+        ]
+    }
+]
