@@ -14,9 +14,7 @@ Uni-MoE is a multi-modal framework which is capable of processing diverse modali
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
 [![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
 
-
-**UMOE: Scaling Unified Multimodal LLMs with Mixture of Experts** [[Paper](url)] <br>
-[Yunxin Li](url) [Shenyuan Jiang](url)
+[Yunxin Li](https:yunxinli.github.io) [Shenyuan Jiang](url)
 
 
 ## 🔥 News
