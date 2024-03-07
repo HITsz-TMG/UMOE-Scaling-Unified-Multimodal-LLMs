@@ -7,15 +7,15 @@
 
 <h5 align="center">
 
-🚀 Welcome to the repo of **UMOE**!
+🚀 Welcome to the repo of **Uni-MOE**!
 Uni-MoE is a multi-modal framework which is capable of processing diverse modalities, including audio, image, text, and video. Specifically, our approach integrates multimodal experts within the transformer blocks of LLMs, comprising: 1) a shared self-attention mechanism for all modalities, 2) modality-specific experts derived from feed-forward networks, and 3) a sparse routing mechanism for allocating token-level expert attention.
 
 [![Project Page](https://img.shields.io/badge/Project_Page-todo-blue)](todo)
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
 [![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
 
-[Yunxin Li](https:yunxinli.github.io) [Shenyuan Jiang](url)
-
+[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL)
+</h5>
 
 ## 🔥 News
 - [4/17] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
