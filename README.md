@@ -91,6 +91,33 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | [RACE](https://huggingface.co/datasets/race/tree/main) | [Speech(TTS)](https://www.cs.cmu.edu/~glai1/data/race/) |
 | [LibriSpeech](https://www.openslr.org/12) | [Speech(Long)](https://www.openslr.org/12) |
 
+We use TTs technical to convert long text to speech, aiming to construct long speech understanding data.
+
+Overall, all training tasks (*16 comparative experiments covering models with single-expert and MoE configurations*) are as follows:
+
+| Training Tasks        | Data Types                                      | Data Size | Epochs | Trainable Modules        | Pretraining tasks           |
+|-----------------------|-------------------------------------------------|-----------|--------|--------------------------|-----------------------------|
+| Audio-Language Pretraining | WaveCaps*, Audiocap*, MELD, ClothoV1       | 194K      | 2      | Audio Q-former, Audio projection layer | -                           |
+| Speech-Language Pretraining | Common Voice (Short Speech)                                | 1.7M      | 2      | Speech Q-former, Speech projection layer | -                           |
+| Single-Modality-Expert-Task1 | LLaVA-Instruction-150K(I-A)                  | 150K      | 1      | LoRA, Speech projection layer | Speech-pretrain-task         |
+| Single-Modality-Expert-Task2 | LLaVA-Instruction-150K(T-I)                  | 150K      | 1      | LoRA, Image projection layer | Speech-pretrain-task         |
+| Single-Modality-Expert-Task3 | LLaVA-Instruction-150K(I-A)                  | 150K      | 1      | LoRA, Speech Q-former, Speech and Image projection layer         | Speech-pretrain-task         |
+| Single-Modality-Expert-Task4 | LLaVA-Instruction-150K(I-A), RACE(T-A), LibriSpeech | 271K | 1 | LoRA, Speech & Image projection | Speech-pretrain-task         |
+| Single-Modality-Expert-Task5 | LLaVA-Instruction-150K(T-I), RACE(T-A), LibriSpeech | 271K | 1 | LoRA, Speech & Image projection | Speech-pretrain-task         |
+| Single-Modality-Expert-Task6 | LLaVA-Instruction-150K(I-A), LLaVA-Instruction-150K(T-I), RACE(T-A), LibriSpeech | 421K | 1 | LoRA, Speech & Image projection | Speech-pretrain-task         |
+| Single-Modality-Expert-Task7 | RACE(T-A), LibriSpeech, RACE(T-A)-MC                       | 209K      | 1      | LoRA, Speech projection layer | Speech-pretrain-task         |
+| Single-Modality-Expert-Task8 | WaveCaps*, Audiocap*, MELD, ClothoAQA, ClothoV1 | 203K    | 1      | LoRA, Audio projection layer | Audio-pretrain-task          |
+| MoE-Task1               | LLaVA-Instruction-Dataset(T-I), LLaVA-Instruction-150K(I-A), RACE(T-A), LibriSpeech, RACE(T-A)-MC | 509K | 3 | LoRA, Router, speech & image projection layer | LLava-V1.5-LoRA, Single-Modality-Expert-Tasks 2/3/7 |
+| MoE-Task1-short-speech  | LLaVA-Instruction-Dataset(T-I), LLaVA-Instruction-150K(I-A) | 300K | 3 | LoRA, Router, speech & image projection layer | LLava-V1.5-LoRA, Single-Modality-Expert-Tasks 2/3/7 |
+| MoE-Task2               | Video-Instruction-150K, LLaVA-Instruction-Dataset(T-I), RACE(T-A), LibriSpeech, RACE(T-A)-MC | 459K | 2 | LoRA, Router, speech & image projection layer | Llava-v1.5-LoRA, Single-Modality-Expert-Tasks 2/3/7 |
+| MoE-Task3               | Video-Instruction-150K, LLaVA-Instruction-Dataset(T-I), WaveCaps*, Audiocap*, MELD,  ClothoAQA, ClothoV1 | 453K | 2 | LoRA, Router, audio & image projection layer | LLava-V1.5-LoRA, Single-Modality-Expert-Tasks 2/3/8 |
+| Pure-MoE-Task1          | Video-Instruction-Dataset, LLaVA-Instruction-Dataset(T-I), WaveCaps*, Audiocap*, MELD, ClothoAQA, ClothoV1 | 453K | 2 | LoRA, Router, audio & image projection layer | LLava-V1.5-LoRA            |
+| Pure-MoE-Task2          | Video-Instruction-Dataset, LLaVA-Instruction-Dataset(T-I), WaveCaps*, Audiocap*, MELD, ClothoAQA, ClothoV1 | 453K | 2 | LoRA, Router, audio & image projection layer | -            |
+
+``*`` refers to the fact that the dataset we use is only a subset. ``MC`` represents the multi-choice setting. ``I-A`` means image-audio pairs, which convert the question into the corresponding speech.  ``T-I`` shows the original text-image pairs. ``T-A`` indicates the contextual paragraph of the RACE dataset is transferred into the long speech. ``Pretraining task`` represents the tasks included in the previous training stage.
+
+
+
 ### Evaluation Data
 | DataSet  | Input Type |
 |----------|----------|
@@ -110,7 +137,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 ### College Entrance English Examination Listening Part
 
 We build a real speech understanding dataset to check the practical long speech recognition capabilities: [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main)
-It comprises 150 questions related to long audio segments which have an average length of 109 seconds, and 50 questions about short audio segments with an average length of 14 seconds.
+It comprises 150 questions related to long audio segments with an average length of 109 seconds, and 50 questions about short audio segments with an average length of 14 seconds.
 
 
 ## 🌈 How to inference
