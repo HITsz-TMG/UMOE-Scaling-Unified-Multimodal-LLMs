@@ -88,8 +88,8 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | [ClothoAQA](https://zenodo.org/records/6473207)  | [audio(QA)](https://zenodo.org/records/6473207) |
 | [ClothoV1](https://zenodo.org/records/3490684) | [audio(Cap)](https://zenodo.org/records/3490684) |
 | [MELD](https://affective-meld.github.io/) | [audio(Music)](https://affective-meld.github.io/) |
-| [RACE](https://huggingface.co/datasets/race/tree/main) | [audio(TTS)](https://www.cs.cmu.edu/~glai1/data/race/) |
-| [LibriSpeech](https://www.openslr.org/12) | [audio(Long)](https://www.openslr.org/12) |
+| [RACE](https://huggingface.co/datasets/race/tree/main) | [Speech(TTS)](https://www.cs.cmu.edu/~glai1/data/race/) |
+| [LibriSpeech](https://www.openslr.org/12) | [Speech(Long)](https://www.openslr.org/12) |
 
 ### Evaluation Data
 | DataSet  | Input Type |
