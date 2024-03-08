@@ -79,11 +79,35 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 ## 🗝️ Dataset
 
 ### Training Data
-
+| DataSet  | extra |
+|----------|-----------|
+| [LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip) |
+| [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)] |
+| [WavCaps](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/json_files) | [audio](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/Zip_files) |
+| [AudioCaps](https://audiocaps.github.io/) | - |
+| [ClothoAQA](https://zenodo.org/records/6473207)  | [audio](https://zenodo.org/records/6473207) |
+| [ClothoV1](https://zenodo.org/records/3490684) | [audio](https://zenodo.org/records/3490684) |
+| [MELD](https://affective-meld.github.io/) | [audio](https://affective-meld.github.io/) |
+| [RACE](https://huggingface.co/datasets/race/tree/main) | - |
+| [LibriSpeech](https://www.openslr.org/12) | [audio](https://www.openslr.org/12) |
 
 ### Evaluation Data
+| DataSet  |
+|----------|
+| [AOKVQA](https://allenai.org/project/a-okvqa/home) |
+| [OKVQA](https://okvqa.allenai.org/) |
+| [VQAv2](https://visualqa.org/) |
+| [ClothoAQA](https://zenodo.org/records/6473207) |
+| [ClothoV1](https://zenodo.org/records/3490684) |
+| [ClothoV2](https://zenodo.org/records/3490684) |
+| [MMBench](https://mmbench.opencompass.org.cn/home) |
+| [RACE](https://huggingface.co/datasets/race/tree/main) |
+| [MSVD](http://www.cs.utexas.edu/users/ml/clamp/videoDescription/) |
+| [Activitynet-QA](https://github.com/MILVLG/activitynet-qa) |
 
+### College Entrance English Examination Listening Part
 
+We consrtuct a small dataset check the practical realworld speech recognition capabilities: [English-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main)
 
 ## 🌈 How to inference
 
