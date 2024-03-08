@@ -35,7 +35,7 @@ We recommend the requirements as follows.
 * Python == 3.9.16
 * CUDA Version >= 11.7
 
-1. Clone this repository and navigate to UMOE folder
+1. Clone this repository and navigate to the Uni-MoE folder
 ```bash
 git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
 cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE
@@ -48,7 +48,7 @@ conda activate unimoe
 pip install -r env.txt
 ```
 
-3. Change all the Absolute Pathnames: "/path/to/" to your own path to UMOE file
+3. Replace all the absolute pathnames '/path/to/' with your specific path to the Uni-MoE file
 
 ## ⚡️ Uni-MOE Weights
 
