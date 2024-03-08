@@ -14,7 +14,7 @@ Uni-MoE is a MoE-based unified multimodal model, which is capable of handling di
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
 [![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
 
-[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL)
+[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Lin Ma](https://forestlinma.com/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
 </h5>
 
 ## 🔥 News
