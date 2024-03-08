@@ -8,7 +8,7 @@
 <h5 align="center">
 
 🚀 Welcome to the repo of **Uni-MOE**!
-Uni-MoE is a multi-modal framework which is capable of processing diverse modalities, including audio, image, text, and video.
+Uni-MoE is a MoE-based unified multimodal model, which is capable of handling diverse modalities, including audio, speech, image, text, and video.
 
 [![Project Page](https://img.shields.io/badge/Project_Page-todo-blue)](todo)
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
@@ -79,39 +79,43 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 ## 🗝️ Dataset
 
 ### Training Data
-| DataSet  | extra |
+| DataSet  | Type |
 |----------|-----------|
 | [LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip) |
 | [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)](url) |
 | [WavCaps](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/json_files) | [audio](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/Zip_files) |
-| [AudioCaps](https://audiocaps.github.io/) | - |
-| [ClothoAQA](https://zenodo.org/records/6473207)  | [audio](https://zenodo.org/records/6473207) |
-| [ClothoV1](https://zenodo.org/records/3490684) | [audio](https://zenodo.org/records/3490684) |
-| [MELD](https://affective-meld.github.io/) | [audio](https://affective-meld.github.io/) |
-| [RACE](https://huggingface.co/datasets/race/tree/main) | - |
-| [LibriSpeech](https://www.openslr.org/12) | [audio](https://www.openslr.org/12) |
+| [AudioCaps](https://audiocaps.github.io/) | [audio(Cap)](https://audiocaps.github.io/) |
+| [ClothoAQA](https://zenodo.org/records/6473207)  | [audio(QA)](https://zenodo.org/records/6473207) |
+| [ClothoV1](https://zenodo.org/records/3490684) | [audio(Cap)](https://zenodo.org/records/3490684) |
+| [MELD](https://affective-meld.github.io/) | [audio(Music)](https://affective-meld.github.io/) |
+| [RACE](https://huggingface.co/datasets/race/tree/main) | [audio(TTS)](https://www.cs.cmu.edu/~glai1/data/race/) |
+| [LibriSpeech](https://www.openslr.org/12) | [audio(Long)](https://www.openslr.org/12) |
 
 ### Evaluation Data
-| DataSet  |
-|----------|
-| [AOKVQA](https://allenai.org/project/a-okvqa/home) |
-| [OKVQA](https://okvqa.allenai.org/) |
-| [VQAv2](https://visualqa.org/) |
-| [ClothoAQA](https://zenodo.org/records/6473207) |
-| [ClothoV1](https://zenodo.org/records/3490684) |
-| [ClothoV2](https://zenodo.org/records/3490684) |
-| [MMBench](https://mmbench.opencompass.org.cn/home) |
-| [RACE](https://huggingface.co/datasets/race/tree/main) |
-| [MSVD](http://www.cs.utexas.edu/users/ml/clamp/videoDescription/) |
-| [Activitynet-QA](https://github.com/MILVLG/activitynet-qa) |
+| DataSet  | Input Type |
+|----------|----------|
+| [AOKVQA](https://allenai.org/project/a-okvqa/home) | Text-Image |
+| [OKVQA](https://okvqa.allenai.org/) | Text-Image |
+| [VQAv2](https://visualqa.org/) | Text-Image |
+| [ClothoAQA](https://zenodo.org/records/6473207) | Audio-Text |
+| [ClothoV1](https://zenodo.org/records/3490684) | Audio-Text |
+| [ClothoV2](https://zenodo.org/records/3490684) | Audio-Text |
+| [MMBench](https://mmbench.opencompass.org.cn/home) | Image-Text |
+| [MMBench-Audio](https://mmbench.opencompass.org.cn/home) | Text-Image-Speech(Long) |
+| [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main) | Text-Speech(Long) |
+| [RACE](https://huggingface.co/datasets/race/tree/main) | Text-Speech(Long) |
+| [MSVD](http://www.cs.utexas.edu/users/ml/clamp/videoDescription/) |Text-Video-Audio |
+| [Activitynet-QA](https://github.com/MILVLG/activitynet-qa) |Text-Video-Audio |
 
 ### College Entrance English Examination Listening Part
 
-We consrtuct a small dataset check the practical realworld speech recognition capabilities: [English-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main)
+We build a real speech understanding dataset to check the practical long speech recognition capabilities: [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main)
+It comprises 150 questions related to long audio segments which have an average length of 109 seconds, and 50 questions about short audio segments with an average length of 14 seconds.
+
 
 ## 🌈 How to inference
 
-1. Make sure that all the weights and downloaded and environment are set correctly.
+1. Make sure that all the weights are downloaded and the running environment is set correctly.
 2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_speech.sh) using ```bash inference_audio.sh``` ```bash inference_speech.sh```or run the following commands to inference:
 ```bash
 cd /path/to/Uni_MoE
