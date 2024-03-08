@@ -82,7 +82,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | DataSet  | extra |
 |----------|-----------|
 | [LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip) |
-| [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)] |
+| [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)](url) |
 | [WavCaps](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/json_files) | [audio](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/Zip_files) |
 | [AudioCaps](https://audiocaps.github.io/) | - |
 | [ClothoAQA](https://zenodo.org/records/6473207)  | [audio](https://zenodo.org/records/6473207) |
