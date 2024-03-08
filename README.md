@@ -5,7 +5,7 @@
 <h2 align="center"> <a href="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/">Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts</a></h2>
 <h5 align="center"> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h2>
 
-<h5 align="center">
+<h4 align="center">
 
 🚀 Welcome to the repo of **Uni-MOE**!
 Uni-MoE is a MoE-based unified multimodal model, which is capable of handling diverse modalities, including audio, speech, image, text, and video.
@@ -15,12 +15,17 @@ Uni-MoE is a MoE-based unified multimodal model, which is capable of handling di
 [![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
 
 [Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Lin Ma](https://forestlinma.com/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
-</h5>
+</h4>
 
 ## 🔥 News
 - [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
 **Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
+
+## 🎨 Case Show
+
+<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/case_figure.png" height="100%" width="75%"/></div>
+
 
 ## 🌟 Structure
 
@@ -140,10 +145,10 @@ We build a real speech understanding dataset to check the practical long speech 
 It comprises 150 questions related to long audio segments with an average length of 109 seconds, and 50 questions about short audio segments with an average length of 14 seconds.
 
 
-## 🌈 How to inference
+## 🌈 How to infer and deploy your demo
 
 1. Make sure that all the weights are downloaded and the running environment is set correctly.
-2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_speech.sh) using ```bash inference_audio.sh``` ```bash inference_speech.sh```or run the following commands to inference:
+2. run inference scripts [`inference_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_audio.sh) and [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/inference_speech.sh) using ```bash inference_audio.sh``` ```bash inference_speech.sh``` or run the following commands to inference:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
@@ -156,18 +161,17 @@ python Uni_MoE_speech/inference_all.py
 ```
 
 
-## 🌈 How to train and evaluate
+## 🌈 How to train and evaluate on datasets
 
 Training:
-1. Make use that all the weights and downloaded and environment is set correctly, especially the base model.
-2. Our training data can be downloaded from: [UMOE-Speech-453k.json](url) and [UMOE-Cap-453k.json](url).
+1. Make sure that all the weights are downloaded and the environment is set correctly, especially for the base model.
+2. Our training data can be downloaded from [UMOE-Speech-453k.json](url) and [UMOE-Cap-453k.json](url).
 3. Relevant vision and audio files: [todo](url)
 4. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
 
 Evaluation:
-1. Make use that all the weights and downloaded and environment is set correctly.
-2. Prepare the evaluation set using the form as [`samples.json`](url).
-3. Run evaluation scripts: [`eval_audio.sh`](url) or [`eval_speech.sh`](url) using ```bash eval_audio.sh``` ```bash eval_speech.sh``` or run the following commands to eval:
+1. Prepare the evaluation set using the form as [`samples.json`](url).
+2. Run evaluation scripts: [`eval_audio.sh`](url) or [`eval_speech.sh`](url) using ```bash eval_audio.sh``` ```bash eval_speech.sh``` or run the following commands to eval:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
@@ -184,7 +188,8 @@ python Uni_MoE_speech/eval.py\
  --data_type vqa\
  --output test.json
 ```
-It is recommended to use 80GB GPU RAM for inference, training and evalutation.
+We recommend using 80GB GPU RAM to run all experiments.
+
 ## Citation
 
 If you find LLaVA useful for your research and applications, please cite using this BibTeX:
