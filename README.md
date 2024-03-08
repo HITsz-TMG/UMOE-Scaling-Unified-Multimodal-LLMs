@@ -8,7 +8,8 @@
 <h4 align="center">
 
 🚀 Welcome to the repo of **Uni-MOE**!
-Uni-MoE is a MoE-based unified multimodal model, which is capable of handling diverse modalities, including audio, speech, image, text, and video.
+
+Uni-MoE is a MoE-based unified multimodal model, handling diverse modalities, including audio, speech, image, text, and video.
 
 [![Project Page](https://img.shields.io/badge/Project_Page-todo-blue)](todo)
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
