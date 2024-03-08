@@ -157,7 +157,7 @@ python Uni_MoE_speech/eval.py\
  --data_type vqa\
  --output test.json
 ```
-
+It is recommended to use 80GB GPU RAM for inference, training and evalutation.
 ## Citation
 
 If you find LLaVA useful for your research and applications, please cite using this BibTeX:
