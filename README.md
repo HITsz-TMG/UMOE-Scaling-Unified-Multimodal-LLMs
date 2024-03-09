@@ -98,7 +98,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | [RACE](https://huggingface.co/datasets/race/tree/main) | [Speech(TTS)](https://www.cs.cmu.edu/~glai1/data/race/) |
 | [LibriSpeech](https://www.openslr.org/12) | [Speech(Long)](https://www.openslr.org/12) |
 
-We use TTs technical to convert long text to speech, aiming to construct long speech understanding data.
+We use TTS technical to convert long text to speech to construct long speech understanding data.
 
 Overall, all training tasks (*16 comparative experiments covering models with single-expert and MoE configurations*) are as follows:
 
@@ -131,10 +131,10 @@ Overall, all training tasks (*16 comparative experiments covering models with si
 | [AOKVQA](https://allenai.org/project/a-okvqa/home) | Text-Image |
 | [OKVQA](https://okvqa.allenai.org/) | Text-Image |
 | [VQAv2](https://visualqa.org/) | Text-Image |
-| [ClothoAQA](https://zenodo.org/records/6473207) | Audio-Text |
-| [ClothoV1](https://zenodo.org/records/3490684) | Audio-Text |
-| [ClothoV2](https://zenodo.org/records/3490684) | Audio-Text |
-| [MMBench](https://mmbench.opencompass.org.cn/home) | Image-Text |
+| [ClothoAQA](https://zenodo.org/records/6473207) | Text-Audio |
+| [ClothoV1](https://zenodo.org/records/3490684) | Text-Audio |
+| [ClothoV2](https://zenodo.org/records/3490684) | Text-Audio |
+| [MMBench](https://mmbench.opencompass.org.cn/home) | Text-Image |
 | [MMBench-Audio](https://mmbench.opencompass.org.cn/home) | Text-Image-Speech(Long) |
 | [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main) | Text-Speech(Long) |
 | [RACE](https://huggingface.co/datasets/race/tree/main) | Text-Speech(Long) |
