@@ -11,7 +11,7 @@
 
 Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalities including audio, speech, image, text, and video.
 
-[![Project Page](https://img.shields.io/badge/Project_Page-todo-blue)](todo)
+[![Project Page](https://img.shields.io/badge/Project_Page-UniMoE-blue)](https://uni-moe.github.io/)
 [![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
 [![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
 
