@@ -19,7 +19,7 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 </h4>
 
 ## 🔥 News
-- [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which is capable of processing diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
+- [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which can process diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
 **Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
 
@@ -36,8 +36,8 @@ The model architecture of Uni-MoE is shown below. Three training stages contain:
 
 ## ⚡️ Install
 
-The following instructions are for linux installation.
-We recommend the requirements as follows.
+The following instructions are for Linux installation.
+We would like to recommend the requirements as follows.
 * Python == 3.9.16
 * CUDA Version >= 11.7
 
