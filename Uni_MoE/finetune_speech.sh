@@ -50,4 +50,5 @@ deepspeed --num_gpus 1 --num_nodes 1\
     --tune_mm_audio_projector True\
     --pretrain_audio_aligner checkpoints/Uni-MoE-speech-base/mm_audio_aligner.bin\
     --llm_lora_enable True \
-    --mix_va True
+    --mix_va True \
+    --group_by_modality_length True
