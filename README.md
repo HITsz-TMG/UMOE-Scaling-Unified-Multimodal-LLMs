@@ -177,7 +177,7 @@ python Uni_MoE_speech/inference_all.py
 Training:
 1. Make sure that all the weights are downloaded and the environment is set correctly, especially for the base model.
 2. Our training data can be downloaded from [UMOE-Speech-453k.json](url) and [UMOE-Cap-453k.json](url).
-3. Relevant vision and audio files: [Dataset](#_🗝️_Dataset)
+3. Relevant vision and audio files: [Dataset](#-🗝️-Dataset)
 4. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
 
 Evaluation:
