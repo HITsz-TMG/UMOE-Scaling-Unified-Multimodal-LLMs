@@ -19,6 +19,7 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 </h4>
 
 ## 🔥 News
+- [4/28] 🔥 We have upgraded the Uni-MoE codebase to facilitate training across multiple GPUs. Explore this enhanced functionality in our revamped [fine-tuning script](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech_dp.sh). Additionally, we have introduced a version that incorporates distributed MoE modules for training our model. For more details, please refer to the [Uni_MoE_v2](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/Uni_MoE_v2) documentation.
 - [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which can process diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
 **Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
@@ -98,7 +99,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | DataSet  | Type |
 |----------|-----------|
 | [LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip) |
-| [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)](url) |
+| [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)](https://www.youtube.com/) |
 | [WavCaps](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/json_files) | [audio](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/Zip_files) |
 | [AudioCaps](https://audiocaps.github.io/) | [audio(Cap)](https://audiocaps.github.io/) |
 | [ClothoAQA](https://zenodo.org/records/6473207)  | [audio(QA)](https://zenodo.org/records/6473207) |
@@ -178,11 +179,12 @@ Training:
 1. Make sure that all the weights are downloaded and the environment is set correctly, especially for the base model.
 2. Our training data can be downloaded from [UMOE-Speech-453k.json](url) and [UMOE-Cap-453k.json](url).
 3. Relevant vision and audio files: [Dataset](#Training-Data)
-4. Run training scripts: [`finetune_audio.sh`](url) or [`finetune_speech.sh`](url) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
+4. Run training scripts: [`finetune_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_audio.sh) or [`finetune_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech.sh) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
+5. For multiple GPUs training, run training scripts: [`finetune_speech_dp.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech_dp.sh) using ```bash finetune_speech_dp.sh```, remember to modify the training set with your own preference.
 
 Evaluation:
-1. Prepare the evaluation set using the form as [`samples.json`](url).
-2. Run evaluation scripts: [`eval_audio.sh`](url) or [`eval_speech.sh`](url) using ```bash eval_audio.sh``` ```bash eval_speech.sh``` or run the following commands to eval:
+1. Prepare the evaluation set using the form as [`samples.json`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/data_sample/samples.json).
+2. Run evaluation scripts: [`eval_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/eval_audio.sh) or [`eval_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/eval_speech.sh) using ```bash eval_audio.sh``` ```bash eval_speech.sh``` or run the following commands to eval:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
