@@ -53,15 +53,6 @@ cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE
 conda create -n unimoe python==3.9.16
 conda activate unimoe
 pip install -r env.txt
-# for Uni_MoE_v2:
-cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE_v2
-conda create -n unimoe_v2 python==3.9.16
-conda activate unimoe
-pip install -r env.txt
-conda install mpi4py
-pip install tutel git+https://github.com/microsoft/tutel@56dbd664341cf6485c9fa292955f77d3ac918a65
-pip install flash-attn==2.5.6
-pip install VideoFileClip
 ```
 
 3. Replace all the absolute pathnames '/path/to/' with your specific path to the Uni-MoE file
@@ -77,6 +68,8 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
     ├── Uni-MoE-audio-e2
     ├── Uni-MoE-speech-base
     ├── Uni-MoE-speech-e2
+    ├── Uni-MoE-speech-base-interval
+    ├── Uni-MoE-speech-v1.5
     ├── clip-vit-large-patch14-336
     ├── whisper-small
     └── BEATs_iter3_plus_AS2M.pt
@@ -144,6 +137,10 @@ Overall, all training tasks (*16 comparative experiments covering models with si
 | [ClothoAQA](https://zenodo.org/records/6473207) | Text-Audio |
 | [ClothoV1](https://zenodo.org/records/3490684) | Text-Audio |
 | [ClothoV2](https://zenodo.org/records/3490684) | Text-Audio |
+| [POPE](https://github.com/RUCAIBox/POPE) | Text-Image |
+| [TextVQA](https://textvqa.org/dataset/) | Text-Image |
+| [MM-Vet](https://github.com/yuweihao/MM-Vet) | Text-Image |
+| [SEEDBench(Image)](https://github.com/ailab-cvc/seed-bench?tab=readme-ov-file) | Text-Image |
 | [MMBench](https://mmbench.opencompass.org.cn/home) | Text-Image |
 | [MMBench-Audio](https://mmbench.opencompass.org.cn/home) | Text-Image-Speech(Long) |
 | [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main) | Text-Speech(Long) |
