@@ -4,11 +4,13 @@
 </h4>
 This is the repo of Uni-MoE-v2
 
+
 Uni-MoE-v2 represents our latest iteration of MoE-based unified multimodal model, designed to adeptly manage a spectrum of modalities such as audio, speech, images, text, and video. This cutting-edge framework boasts enhanced capabilities for multi-GPU training and inferencing, significantly accelerating the optimization process and expanding the scale of our model.
 
 ## 🌟 Structure
 
 The model architecture of Uni-MoE is shown below. Three training stages contain: 1) Utilize pairs from different modalities and languages to build connectors that map these elements to a unified language space, establishing a foundation for multimodal understanding; 2) Develop modality-specific experts using cross-modal data to ensure deep understanding, preparing for a cohesive multi-expert model; 3) Incorporate multiple trained experts into LLMs and refine the unified multimodal model using the LoRA technique on mixed multimodal data. 
+
 In the V2 edition of our model, we have integrated the DeepSpeed MoE architecture to facilitate the efficient distribution of experts' weights across various GPUs during both training and testing phases. This strategic design ensures balanced load allocation and enhanced parallel processing capabilities.Furthermore, we have introduced a novel LoRA integrated MLP to optimize the distribution mechanism to reduces computational complexity while ensuring the distribution function of DeepSpeed MOE still works.
 
 <div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/model.png" height="100%" width="75%"/></div>
@@ -20,7 +22,7 @@ We would like to recommend the requirements as follows.
 * Python == 3.9.16
 * CUDA Version >= 11.7
 
-1. Clone this repository and navigate to the Uni-MoE folder
+1. Clone this repository and navigate to the Uni_MoE_v2 folder
 ```bash
 git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
 cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE_v2
@@ -100,7 +102,7 @@ It comprises 150 questions related to long audio segments with an average length
 
 ## 🌈 How to infer and deploy your demo
 
-1. Make sure that all the weights are downloaded and the running environment is set correctly(the checkpoints are not availible yet).
+1. Make sure that all the weights are downloaded and the running environment is set correctly (the checkpoints are not availible yet).
 2. run inference scripts [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/inference_speech.sh) using ```bash inference_speech.sh``` or run the following commands to inference:
 
 ```bash
@@ -152,7 +154,7 @@ deepspeed --num_gpus=2 --num_nodes=1 \
     --audio_tower checkpoints/whisper-small \
     --output_dir Uni_MoE_speech_eval_out.json
 ```
-We recommend using 2 80GB GPU RAM to run all experiments.
+We recommend using 2x80GB GPU RAM to run all experiments.
 
 ## Citation
 
