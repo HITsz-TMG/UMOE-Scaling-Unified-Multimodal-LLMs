@@ -1,33 +1,10 @@
 
-<p align="center">
-    <img src="https://s21.ax1x.com/2024/03/28/pFIqhE4.png" width="250" style="margin-bottom: 0.2;"/>
-<p>
-<h2 align="center"> <a href="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/">Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts</a></h2>
-<h5 align="center"> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h2>
-
-<h4 align="center">
-
-🚀 Welcome to the repo of **Uni-MOE**!
-
-Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalities including audio, speech, image, text, and video.
-
-[![Project Page](https://img.shields.io/badge/Project_Page-UniMoE-blue)](https://uni-moe.github.io/)
-[![Demo](https://img.shields.io/badge/Demo-todo-orange)](todo) 
-[![Paper](https://img.shields.io/badge/Paper-todo-yellow)](todo)
-
+# Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts
 [Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Wanqi Zhong](URL), [Lin Ma](https://forestlinma.com/), [Wenhan Luo](https://whluo.github.io/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
 </h4>
+This is the repo of Uni-MoE-v2
 
-## 🔥 News
-- [4/28] 🔥 We have upgraded the Uni-MoE codebase to facilitate training across multiple GPUs. Explore this enhanced functionality in our revamped [fine-tuning script](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech_dp.sh). Additionally, we have introduced a version that incorporates distributed MoE modules for training our model. For more details, please refer to the [Uni_MoE_v2](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/Uni_MoE_v2) documentation.
-- [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which can process diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
-
-**Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
-
-## 🎨 Case Show
-
-<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/case_figure.png" height="100%" width="75%"/></div>
-
+Uni-MoE-v2 is our updated edition ofMoE-based unified multimodal model and can handle diverse modalities including audio, speech, image, text, and video. This new framework support multi-GPUs training and inferencing which speed up the optimization process and the scale of our model.
 
 ## 🌟 Structure
 
@@ -45,16 +22,11 @@ We would like to recommend the requirements as follows.
 1. Clone this repository and navigate to the Uni-MoE folder
 ```bash
 git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
-cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE
+cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE_v2
 ```
 
 2. Install Package
 ```Shell
-conda create -n unimoe python==3.9.16
-conda activate unimoe
-pip install -r env.txt
-# for Uni_MoE_v2:
-cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE_v2
 conda create -n unimoe_v2 python==3.9.16
 conda activate unimoe
 pip install -r env.txt
@@ -68,15 +40,13 @@ pip install VideoFileClip
 
 ## ⚡️ Uni-MOE Weights
 
-To use our model, all weights should be downloaded.
+To use our new version model, all weights should be downloaded, the base link is not released yet.
 
 After downloading all of them, organize the weights as follows in 'Uni_MoE/checkpoint' folder:
 ```
 └── checkpoint
-    ├── Uni-MoE-audio-base
-    ├── Uni-MoE-audio-e2
-    ├── Uni-MoE-speech-base
-    ├── Uni-MoE-speech-e2
+    ├── Uni-MoE-speech-base-8
+    ├── Uni-MoE-speech-8-e2
     ├── clip-vit-large-patch14-336
     ├── whisper-small
     └── BEATs_iter3_plus_AS2M.pt
@@ -90,6 +60,8 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | Uni-MoE-audio-fine-tuned-chekpoint | [Uni-MoE/Uni-MoE-audio-e2](https://huggingface.co/VictorJsy/Uni-MoE-audio-e2/tree/main) |
 | Uni-MoE-speech-base-model | [Uni-MoE/Uni-MoE-speech-base](https://huggingface.co/VictorJsy/Uni-MoE-speech-base/tree/main) |
 | Uni-MoE-speech-fine-tuned-chekpoint | [Uni-MoE/Uni-MoE-speech-e2](https://huggingface.co/VictorJsy/Uni-MoE-speech-e2/tree/main) |
+| Uni-MoE-speech-interval-base-model | [Uni-MoE/Uni-MoE-speech-base-interval](url) |
+| Uni-MoE-speech-fine-tuned-chekpoint-v1.5 | [Uni-MoE/Uni-MoE-speech-v1.5](https://huggingface.co/VictorJsy/Uni-MoE-speech-v1.5) |
 
 * Uni-MoE-speech refers to the MOE-Task2 and Uni-MoE-audio refers to the MOE-Task3 in our paper.
 
@@ -98,6 +70,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 ### Training Data
 | DataSet  | Type |
 |----------|-----------|
+| [LLaVA-Instruct-665K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip)(todo) |
 | [LLaVA-Instruct-150K](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) | [imgae(train2014)](http://images.cocodataset.org/zips/train2014.zip) |
 | [Video-Instruct-Dataset](https://github.com/mbzuai-oryx/Video-ChatGPT) | [video(from youtube)](https://www.youtube.com/) |
 | [WavCaps](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/json_files) | [audio](https://huggingface.co/datasets/cvssp/WavCaps/tree/main/Zip_files) |
