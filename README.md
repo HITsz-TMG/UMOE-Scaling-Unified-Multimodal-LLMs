@@ -29,8 +29,7 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 <div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/case_figure.png" height="100%" width="75%"/></div>
 
 ## 📀 Demo Video
-<video src="https://github.com/Uni-MoE/Uni-MoE.github.io/blob/main/static/images/demo.mp4?raw=true" controls>
-</video> -->
+<div align=center><video src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/demo.mp4" controls></video></div>
 
 ## 🌟 Structure
 
