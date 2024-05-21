@@ -213,11 +213,13 @@ We recommend using 80GB GPU RAM to run all experiments.
 If you find LLaVA useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 
-@misc{li2024umoe,
+@misc{li2024unimoe,
       title={Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts}, 
-      author={},
-      publisher={},
+      author={Yunxin Li and Shenyuan Jiang and Baotian Hu and Longyue Wang and Wanqi Zhong and Wenhan Luo and Lin Ma and Min Zhang},
       year={2024},
+      eprint={2405.11273},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
 }
 
 ```
