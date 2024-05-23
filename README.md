@@ -210,7 +210,7 @@ We recommend using 80GB GPU RAM to run all experiments.
 
 ## Citation
 
-If you find LLaVA useful for your research and applications, please cite using this BibTeX:
+If you find Uni-MoE useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 
 @misc{li2024unimoe,
