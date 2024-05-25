@@ -180,7 +180,7 @@ To launch the online demo, run:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
-python demo/demo_speech.py
+python demo/demo.py
 python demo/app.py
 ```
 
