@@ -176,6 +176,13 @@ cd /path/to/Uni_MoE
 conda activate unimoe
 python Uni_MoE_speech/inference_all.py
 ```
+To launch the online demo, run:
+```bash
+cd /path/to/Uni_MoE
+conda activate unimoe
+python demo_speech/app.py
+python demo/app.py
+```
 
 
 ## 🌈 How to train and evaluate on datasets
