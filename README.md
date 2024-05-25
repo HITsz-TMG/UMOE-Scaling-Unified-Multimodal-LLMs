@@ -178,7 +178,7 @@ cd /path/to/Uni_MoE
 conda activate unimoe
 python Uni_MoE_speech/inference_all.py
 ```
-To launch the online demo, run:
+To launch the online demo( It is highly recommended to launch the demo with [Uni-MoE-speech-base-interval](https://huggingface.co/VictorJsy/Uni-MoE-speech-base-interval) and [Uni-MoE-speech-v1.5](https://huggingface.co/VictorJsy/Uni-MoE-speech-v1.5) ), run:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
