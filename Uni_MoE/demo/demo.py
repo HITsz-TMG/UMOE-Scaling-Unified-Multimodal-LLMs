@@ -300,8 +300,8 @@ def progress():
 
 
 if __name__ == "__main__":
-    model_path = "/path/to/Uni_MoE_speech_interval_2node"
-    model_base = "/path/to/llava-lora-merge-4moe-interval"
+    model_path = "/path/to/Uni-MoE-speech-v1.5"
+    model_base = "/path/to/Uni-MoE-speech-base-interval"
     model_name = "unimoe_lora"
     tokenizer, model, image_processor,audio_processor, context_len = load_all_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False,vison_tower_path="/data/lyx/jsy/clip-vit-large-patch14-336",audio_tower_path="/data/lyx/jsy/whisper-small")
     model.bfloat16()
