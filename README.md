@@ -95,6 +95,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | Uni-MoE-speech-v1.5  | [Uni-MoE/Uni-MoE-speech-v1.5](https://huggingface.co/VictorJsy/Uni-MoE-speech-v1.5) |
 
 * Uni-MoE-speech refers to the MOE-Task2 and Uni-MoE-audio refers to the MOE-Task3 in our paper.
+* 'Uni-MoE-base' is the backbone containing LLMs and trained parameters gained from Training Stage 2: Training Modality-Specific Expert.
 
 ## 🗝️ Dataset
 
@@ -178,7 +179,7 @@ cd /path/to/Uni_MoE
 conda activate unimoe
 python Uni_MoE_speech/inference_all.py
 ```
-To launch the online demo( It is highly recommended to launch the demo with [Uni-MoE-speech-base-interval](https://huggingface.co/VictorJsy/Uni-MoE-speech-base-interval) and [Uni-MoE-speech-v1.5](https://huggingface.co/VictorJsy/Uni-MoE-speech-v1.5) ), run:
+To launch the online demo ( It is highly recommended to launch the demo with [Uni-MoE-speech-v1.5](https://huggingface.co/VictorJsy/Uni-MoE-speech-v1.5) that need the basic parameters of [Uni-MoE-speech-base-interval](https://huggingface.co/VictorJsy/Uni-MoE-speech-base-interval)), run:
 ```bash
 cd /path/to/Uni_MoE
 conda activate unimoe
