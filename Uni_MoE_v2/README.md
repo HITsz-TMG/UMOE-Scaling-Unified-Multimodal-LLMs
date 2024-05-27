@@ -58,7 +58,7 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 |----------|-----------|
 | vision encoder | [CLIP ViT-L/14 336px](https://huggingface.co/openai/clip-vit-large-patch14-336/tree/main) |
 | speech encoder | [whisper small](https://huggingface.co/openai/whisper-small/tree/main) |
-| audio encoder  | [Fine-tuned BEATs_iter3+ (AS2M)](https://valle.blob.core.windows.net/share/BEATs/BEATs_iter3_plus_AS2M.pt?sv=2020-08-04&st=2023-03-01T07%3A51%3A05Z&se=2033-03-02T07%3A51%3A00Z&sr=c&sp=rl&sig=QJXmSJG9DbMKf48UDIU1MfzIro8HQOf3sqlNXiflY1I%3D) |
+| audio encoder  | [BEATs_iter3+ (AS2M)](https://1drv.ms/u/s!AqeByhGUtINrgcpke6_lRSZEKD5j2Q?e=A3FpOf) |
 | Uni-MoE-speech-base-8 | [Not Release Yet](https://huggingface.co/VictorJsy/Uni-MoE-speech-base/tree/main) |
 | Uni-MoE-speech-8-e2 | [Not Release Yet](https://huggingface.co/VictorJsy/Uni-MoE-speech-e2/tree/main) |
 
