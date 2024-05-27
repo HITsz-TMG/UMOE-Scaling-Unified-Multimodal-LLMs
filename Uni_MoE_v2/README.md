@@ -1,8 +1,9 @@
 
 # Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts
 [Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Wanqi Zhong](URL), [Wenhan Luo](https://whluo.github.io/), [Lin Ma](https://forestlinma.com/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
+
 </h4>
-This is the repo of Uni-MoE-v2, where the main code contribution int this version is from Wanqi Zhong
+The main code contribution in this version is from Wanqi Zhong
 
 Uni-MoE-v2 represents our latest iteration of MoE-based unified multimodal model, designed to adeptly manage a spectrum of modalities such as audio, speech, images, text, and video. This cutting-edge framework boasts enhanced capabilities for multi-GPU training and inferencing, significantly accelerating the optimization process and expanding the scale of our model.
 
