@@ -218,6 +218,11 @@ python Uni_MoE_speech/eval.py\
 ```
 We recommend using 80GB GPU RAM to run all experiments.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs&type=Date)](https://star-history.com/#HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs&Date)
+
+
 ## Citation
 
 If you find Uni-MoE useful for your research and applications, please cite using this BibTeX:
