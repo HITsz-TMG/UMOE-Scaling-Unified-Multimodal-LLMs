@@ -1,6 +1,6 @@
 
 # Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts
-[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Wanqi Zhong](URL), [Lin Ma](https://forestlinma.com/), [Wenhan Luo](https://whluo.github.io/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
+[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Wanqi Zhong](URL), [Wenhan Luo](https://whluo.github.io/), [Lin Ma](https://forestlinma.com/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
 </h4>
 This is the repo of Uni-MoE-v2
 
