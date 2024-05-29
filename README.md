@@ -193,7 +193,7 @@ python demo/app.py
 
 Training:
 1. Make sure that all the weights are downloaded and the environment is set correctly, especially for the base model.
-2. Our training data can be downloaded from [UMOE-Speech-453k.json]https://huggingface.co/datasets/Uni-MoE/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Speech.json) and [UMOE-Cap-453k.json](https://huggingface.co/datasets/Uni-MoE/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Cap.json).
+2. Our training data can be downloaded from [UMOE-Speech-453k.json](https://huggingface.co/datasets/Uni-MoE/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Speech.json) and [UMOE-Cap-453k.json](https://huggingface.co/datasets/Uni-MoE/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Cap.json).
 3. Relevant vision and audio files: [Dataset](#Training-Data)
 4. Run training scripts: [`finetune_audio.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_audio.sh) or [`finetune_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech.sh) using ```bash finetune_audio.sh``` ```bash finetune_speech.sh```, remember to modify the training set with your own preference.
 5. For multiple GPUs training, run training scripts: [`finetune_speech_dp.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech_dp.sh) using ```bash finetune_speech_dp.sh```, remember to modify the training set with your own preference.
