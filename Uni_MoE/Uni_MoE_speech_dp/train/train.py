@@ -22,10 +22,10 @@ from typing import Dict, Optional, Sequence, List, Any, Union
 import torch
 import transformers
 
-from Uni_MoE_speech.train.llava_trainer import LLaVATrainer
-from Uni_MoE_speech.train.data import ModelArguments,DataArguments,TrainingArguments,make_supervised_data_module
-from Uni_MoE_speech import conversation as conversation_lib
-from Uni_MoE_speech.model import *
+from Uni_MoE_speech_dp.train.llava_trainer import LLaVATrainer
+from Uni_MoE_speech_dp.train.data import ModelArguments,DataArguments,TrainingArguments,make_supervised_data_module
+from Uni_MoE_speech_dp import conversation as conversation_lib
+from Uni_MoE_speech_dp.model import *
 
 
 

@@ -19,7 +19,7 @@ import base64
 import re
 import torch
 from transformers import StoppingCriteria
-from Uni_MoE_speech.constants import IMAGE_TOKEN_INDEX,AUDIO_TOKEN_INDEX,VIDEO_TOKEN_INDEX
+from Uni_MoE_speech_dp.constants import IMAGE_TOKEN_INDEX,AUDIO_TOKEN_INDEX,VIDEO_TOKEN_INDEX
 
 
 def load_image_from_base64(image):

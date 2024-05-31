@@ -23,7 +23,7 @@ from .multimodal_projector.builder import build_vision_projector
 from .audio_encoder.builder import build_audio_tower
 from .audio_aligner.builder import build_audio_aligner
 
-from Uni_MoE_speech.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, AUDIO_TOKEN_INDEX, VIDEO_TOKEN_INDEX
+from Uni_MoE_speech_dp.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_PATCH_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, AUDIO_TOKEN_INDEX, VIDEO_TOKEN_INDEX
 
 
 

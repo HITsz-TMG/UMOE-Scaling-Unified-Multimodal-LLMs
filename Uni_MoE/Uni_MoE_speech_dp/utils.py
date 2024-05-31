@@ -20,7 +20,7 @@ import sys
 
 import requests
 
-from Uni_MoE_speech.constants import LOGDIR
+from Uni_MoE_speech_dp.constants import LOGDIR
 
 server_error_msg = "**NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE.**"
 moderation_msg = "YOUR INPUT VIOLATES OUR CONTENT MODERATION GUIDELINES. PLEASE TRY AGAIN."

@@ -17,16 +17,16 @@ import torch
 
 import transformers
 
-from Uni_MoE_speech.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
+from Uni_MoE_speech_dp.constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
 from torch.utils.data import Dataset
 
-from Uni_MoE_speech import conversation as conversation_lib
-from Uni_MoE_speech.model import *
-from Uni_MoE_speech.mm_utils import tokenizer_image_audio_video_token
+from Uni_MoE_speech_dp import conversation as conversation_lib
+from Uni_MoE_speech_dp.model import *
+from Uni_MoE_speech_dp.mm_utils import tokenizer_image_audio_video_token
 
 from PIL import Image
 
-AUDIOSTART = "/data/"
+AUDIOSTART = "/path/to/"
 
 local_rank = None
 def rank0_print(*args):

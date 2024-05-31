@@ -21,7 +21,7 @@ from torch.nn import CrossEntropyLoss
 
 from transformers import AutoConfig, AutoModelForCausalLM, \
                          LlamaConfig
-from Uni_MoE_speech.model.moe.modeling_llama import LlamaForCausalLM, LlamaModel, LlamaAttention
+from Uni_MoE_speech_dp.model.moe.modeling_llama import LlamaForCausalLM, LlamaModel, LlamaAttention
 
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
@@ -135,7 +135,7 @@ def _prepare_decoder_attention_mask(
 
 
 class LlavaConfig(LlamaConfig):
-    model_type = "llava_llama"
+    model_type = "llava"
 
 
 class LlavaLlamaModel(LlavaMetaModel, LlamaModel):
@@ -257,5 +257,5 @@ class LlavaLlamaForCausalLM(LlamaForCausalLM, LlavaMetaForCausalLM):
         )
         return model_inputs
 
-AutoConfig.register("llava_llama", LlavaConfig)
+AutoConfig.register("llava", LlavaConfig)
 AutoModelForCausalLM.register(LlavaConfig, LlavaLlamaForCausalLM)

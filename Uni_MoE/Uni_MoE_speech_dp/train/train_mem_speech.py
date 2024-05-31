@@ -18,10 +18,10 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '2,3'
 import sys 
 root_path = os.path.abspath("/path/to/Uni_MoE") 
 sys.path.append(root_path) 
-from Uni_MoE_speech.train.llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
+from Uni_MoE_speech_dp.train.llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
 replace_llama_attn_with_flash_attn()
 
-from Uni_MoE_speech.train.train import train
+from Uni_MoE_speech_dp.train.train import train
 
 if __name__ == "__main__":
     train()
