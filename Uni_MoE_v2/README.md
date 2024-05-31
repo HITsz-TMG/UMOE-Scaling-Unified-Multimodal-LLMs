@@ -48,8 +48,9 @@ To use our new version model, all weights should be downloaded, the base link is
 After downloading all of them, organize the weights as follows in 'Uni_MoE/checkpoint' folder:
 ```
 └── checkpoint
-    ├── Uni-MoE-speech-base-8
-    ├── Uni-MoE-speech-8-e2
+    ├── Uni_MoE_v2_Experts
+    ├── Uni-MoE-speech-base
+    ├── Uni_MoE_v2_e2
     ├── clip-vit-large-patch14-336
     ├── whisper-small
     └── BEATs_iter3_plus_AS2M.pt
@@ -59,10 +60,11 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 | vision encoder | [CLIP ViT-L/14 336px](https://huggingface.co/openai/clip-vit-large-patch14-336/tree/main) |
 | speech encoder | [whisper small](https://huggingface.co/openai/whisper-small/tree/main) |
 | audio encoder  | [BEATs_iter3+ (AS2M)](https://1drv.ms/u/s!AqeByhGUtINrgcpke6_lRSZEKD5j2Q?e=A3FpOf) |
-| Uni-MoE-speech-base-8 | [Not Release Yet](https://huggingface.co/VictorJsy/Uni-MoE-speech-base/tree/main) |
-| Uni-MoE-speech-8-e2 | [Not Release Yet](https://huggingface.co/VictorJsy/Uni-MoE-speech-e2/tree/main) |
+| Uni-MoE 8-expert base | [Uni-MoE-speech-base](https://huggingface.co/Uni-MoE/Uni-MoE-speech-base) |
+| Uni_MoE 8-expert experts | [Uni_MoE_v2_Experts](https://huggingface.co/Uni-MoE/Uni-MoE-v2-Experts) |
+| Uni_MoE 8-expert finetune model | [Uni_MoE_v2_e2](https://huggingface.co/Uni-MoE/Uni-MoE-v2-e2) |
 
-* Uni-MoE-speech-8-e2 is trained using [Uni MoE Speech v2 dataset](https://huggingface.co/datasets/VictorJsy/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Speech_v2_with_token.json) which add llava-665K for better image-text instruction tuning compared with MoE-Task2.
+* Uni_MoE_v2_e2 is trained using [Uni MoE Speech v2 dataset](https://huggingface.co/datasets/VictorJsy/Uni-MoE-Training-Dataset/blob/main/Uni_MoE_Speech_v2_with_token.json) which add llava-665K for better image-text instruction tuning compared with MoE-Task2.
 
 ## 🗝️ Dataset
 
@@ -104,6 +106,7 @@ It comprises 150 questions related to long audio segments with an average length
 
 1. Make sure that all the weights are downloaded and the running environment is set correctly (the checkpoints are not availible yet).
 2. run inference scripts [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/inference_speech.sh) using ```bash inference_speech.sh``` or run the following commands to inference:
+3. NOTE: 8-experts model and 4-expert model share the same Uni-MoE-speech-base, remember to change the config to ```8config.json``` before inference.
 
 ```bash
 cd /path/to/Uni_MoE_v2
@@ -116,12 +119,12 @@ deepspeed --num_gpus=2 --num_nodes=1 \
     Uni_MoE_speech/inference_new.py \
     --deepspeed ./scripts/zero2.json \
     --model_base path/to/Uni-MoE-speech-base \
-    --model_path output/Uni_MoE_speech_test_final \
+    --model_path output/Uni_MoE_v2_e2 \
     --data_path /path/to/eval.json \
     --enable_deepspeed_moe True \
     --data_type vqa\
     --eval_ep_size 2 \
-    --mlp_dir path/to/MoeMerge\
+    --mlp_dir path/to/Uni_MoE_v2_Experts\
     --version v1 \
     --vision_tower path/to/clip-vit-large-patch14-336 \
     --audio_tower path/to/whisper-small \
@@ -134,6 +137,7 @@ deepspeed --num_gpus=2 --num_nodes=1 \
 Evaluation:
 1. Prepare the evaluation set using the form as [`samples.json`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/data_sample/samples.json).
 2. Run evaluation scripts: [`eval_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/eval_speech.sh) using ```bash eval_speech.sh``` or run the following commands to eval:
+3. NOTE: 8-experts model and 4-expert model share the same Uni-MoE-speech-base, remember to change the config to ```8config.json``` before evaluation.
 ```bash
 cd path/to/Uni_MoE_v2
 conda activate unimoe_v2
@@ -143,12 +147,12 @@ deepspeed --num_gpus=2 --num_nodes=1 \
     Uni_MoE_speech/eval.py \
     --deepspeed ./scripts/zero2.json \
     --model_base checkpoints/Uni-MoE-speech-base \
-    --model_path output/Uni_MoE_speech_8moe \
+    --model_path output/Uni_MoE_v2_e2 \
     --data_path path/to/eval.json \
     --enable_deepspeed_moe True \
     --data_type vqa\
     --eval_ep_size 2 \
-    --mlp_dir path/to/MoeMerge\
+    --mlp_dir path/to/Uni_MoE_v2_Experts\
     --version v1 \
     --vision_tower checkpoints/clip-vit-large-patch14-336 \
     --audio_tower checkpoints/whisper-small \
