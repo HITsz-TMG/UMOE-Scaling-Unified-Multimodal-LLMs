@@ -20,7 +20,7 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 </h4>
 
 ## 🔥 News
-- [5/31] 🔥 The checkpoint of Uni-MoE-v2 with 8 experts is now available for downloading and inference. For more details, please refer to the [Uni_MoE_v2_weights](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/README.md#Uni-MOE%20Weights) table. 
+- [5/31] 🔥 The checkpoint of Uni-MoE-v2 with 8 experts is now available for downloading and inference. For more details, please refer to the [Uni_MoE_v2_weights](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/README.md#%EF%B8%8F-uni-moe-weights) table. 
 - [4/28] 🔥 We have upgraded the Uni-MoE codebase to facilitate training across multiple Nodes and GPUs. Explore this enhanced functionality in our revamped [fine-tuning script](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/finetune_speech_dp.sh). Additionally, we have introduced a version that integrates distributed MoE modules. This enhancement allows for training our model with parallel processing at both the expert and modality levels, enhancing efficiency and scalability. For more details, please refer to the [Uni_MoE_v2](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/Uni_MoE_v2) documentation. 
 - [3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which can process diverse modalities, including audio, image, text, and video.  Checkout the [paper](TODO) and [demo](TODO).
 
