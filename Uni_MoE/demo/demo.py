@@ -206,29 +206,29 @@ def initial_input(query,tokenizer, image_processor, audio_processor,image=None,v
     return batch_dict
 
 def extract_frames(video_path, output_folder, num_frames=8):
-    # 创建输出文件夹（如果不存在）
+    # Create output folder if it does not exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    # 加载视频文件
+    # Loading video files
     video_clip = VideoFileClip(video_path)
 
-    # 计算帧数和帧间隔
+    # Calculate the number of frames and the frame interval
     total_frames = int(video_clip.duration * video_clip.fps)
     frame_interval = total_frames // num_frames
 
-    # 抽取并保存帧
+    # Extract and save frames
     frame_paths = []
     for i in range(num_frames):
         frame_time = i * frame_interval
         frame = video_clip.get_frame(frame_time / video_clip.fps)
-        # 转换为PIL图像
+        # Convert to PIL Image
         pil_image = Image.fromarray(frame)
         output_path = os.path.join(output_folder, f"frame_{i:03d}.jpg")
         pil_image.save(output_path)
         frame_paths.append(output_path)
 
-    # 关闭视频文件
+    # Close video file
     video_clip.close()
     return output_folder
 
