@@ -41,6 +41,8 @@ pip install VideoFileClip
 
 3. Replace all the absolute pathnames '/path/to/' or '/data/' with your specific path to the Uni-MoE file
 
+**(Including all the eval_x.py/inference_x.py/train_mem_x.py/data.py/demo.py files and config.json files from the model weights)**
+
 ## ⚡️ Uni-MOE Weights
 
 To use our new version model, all weights should be downloaded, the base link is not released yet.
