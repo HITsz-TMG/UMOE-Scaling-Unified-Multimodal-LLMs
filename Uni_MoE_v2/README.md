@@ -45,7 +45,7 @@ pip install VideoFileClip
 
 ## ⚡️ Uni-MOE Weights
 
-To use our new version model, all weights should be downloaded, the base link is not released yet.
+To use our new version model, all weights should be downloaded.
 
 After downloading all of them, organize the weights as follows in 'Uni_MoE/checkpoint' folder:
 ```
@@ -106,9 +106,9 @@ It comprises 150 questions related to long audio segments with an average length
 
 ## 🌈 How to infer and deploy your demo
 
-1. Make sure that all the weights are downloaded and the running environment is set correctly (the checkpoints are not availible yet).
+1. Make sure that all the weights are downloaded and the running environment is set correctly.
 2. run inference scripts [`inference_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/inference_speech.sh) using ```bash inference_speech.sh``` or run the following commands to inference:
-3. NOTE: 8-experts model and 4-expert model share the same Uni-MoE-speech-base, remember to change the config to ```8config.json``` before inference.
+3. NOTE: 8-experts model share the same Uni-MoE-speech-base, **remember to replace the content of ```config.json``` with ```8config.json``` before inference**.
 
 ```bash
 cd /path/to/Uni_MoE_v2
@@ -139,7 +139,7 @@ deepspeed --num_gpus=2 --num_nodes=1 \
 Evaluation:
 1. Prepare the evaluation set using the form as [`samples.json`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/data_sample/samples.json).
 2. Run evaluation scripts: [`eval_speech.sh`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/eval_speech.sh) using ```bash eval_speech.sh``` or run the following commands to eval:
-3. NOTE: 8-experts model and 4-expert model share the same Uni-MoE-speech-base, remember to change the config to ```8config.json``` before evaluation.
+3. NOTE: 8-experts model share the same Uni-MoE-speech-base, **remember to replace the content of ```config.sjon``` with ```8config.json``` before evaluation**.
 ```bash
 cd path/to/Uni_MoE_v2
 conda activate unimoe_v2
