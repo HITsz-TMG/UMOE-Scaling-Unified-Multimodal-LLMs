@@ -65,7 +65,7 @@ conda activate unimoe
 pip install -r env.txt
 ```
 
-3. Replace all the absolute pathnames '/path/to/' with your specific path to the Uni-MoE file **(Including all the .py files and config.json files from the model weights)**
+3. Replace all the absolute pathnames '/path/to/' with your specific path to the Uni-MoE file **(Including all the eval_x.py/inference_x.py/train_mem_x.py/data.py/demo.py files and config.json files from the model weights)**
 
 ## ⚡️ Uni-MOE Weights
 
