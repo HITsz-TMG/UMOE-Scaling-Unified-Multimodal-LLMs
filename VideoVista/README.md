@@ -6,7 +6,7 @@
 ## 🔥 News
 **`2024.06.11`** 🚀 We are very proud to launch VideoVista, A Versatile Benchmark for Video Understanding and Reasoning.
 
-##  🌟 VideoVista Overview
+## 🌟 VideoVista Overview
 
 Despite significant breakthroughs in video analysis driven by the rapid development of large multimodal models (LMMs), there remains a lack of a versatile evaluation benchmark to comprehensively assess these models' performance in video understanding and reasoning. 
 
@@ -23,31 +23,52 @@ We introduce **VideoVista**, a video benchmark that integrates challenges across
 
 <div align=center><img src="asset/data_stastic.png" height="60%" width="60%"/></div>
 
+## 🗝️ Dataset Statistics
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="asset/Time.png" alt="Image 1" style="width: 100%;"/>
+      <figcaption>The statistics of 14 video categories</figcaption>
+    </td>
+    <td style="text-align: center;">
+      <img src="asset/Category.png" alt="Image 2" style="width: 100%;"/>
+      <figcaption>The distribution of video durations</figcaption>
+    </td>
+  </tr>
+</table>
+
+
 [//]: # (<div style="display: flex; justify-content: space-between;">)
 
-[//]: # (    <img src="asset/Time.png" alt="Image 1" style="width: 48%;"/>)
+[//]: # (    <figure style="width: 45%; text-align: center;">)
 
-[//]: # (    <img src="asset/Category.png" alt="Image 2" style="width: 48%;"/>)
+[//]: # (        <img src="asset/Time.png" alt="Image 1" style="width: 100%;"/>)
+
+[//]: # (        <figcaption>Figure 2: The statistics of 14 video categories</figcaption>)
+
+[//]: # (    </figure>)
+
+[//]: # (    <figure style="width: 45%; text-align: center;">)
+
+[//]: # (        <img src="asset/Category.png" alt="Image 2" style="width: 100%;"/>)
+
+[//]: # (        <figcaption>Figure 3: The distribution of video durations &#40;minute&#41;</figcaption>)
+
+[//]: # (    </figure>)
 
 [//]: # (</div>)
 
-<div style="display: flex; justify-content: space-between;">
-    <figure style="width: 45%; text-align: center;">
-        <img src="asset/Time.png" alt="Image 1" style="width: 100%;"/>
-        <figcaption>Figure 2: The statistics of 14 video categories</figcaption>
-    </figure>
-    <figure style="width: 45%; text-align: center;">
-        <img src="asset/Category.png" alt="Image 2" style="width: 100%;"/>
-        <figcaption>Figure 3: The distribution of video durations (minute)</figcaption>
-    </figure>
-</div>
-
 ## 🔍 Dataset Example
 
-<figure style="margin: 0; text-align: center;">
-    <img src="asset/Case.png" alt="Image 1" style="width: 80%; display: block; margin: 0 auto;"/>
-    <figcaption>Figure 4: Example for Task Types</figcaption>
-</figure>
+[//]: # (<figure style="margin: 0; text-align: center;">)
+
+[//]: # (    <img src="asset/Case.png" alt="Image 1" style="width: 80%; display: block; margin: 0 auto;"/>)
+
+[//]: # (    <figcaption>Figure 4: Example for Task Types</figcaption>)
+
+[//]: # (</figure>)
+
+<div align=center><img src="asset/Case.png" height="90%" width="90%"/></div>
 
 [//]: # (## Dataset Examples)
 
