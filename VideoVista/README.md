@@ -2,11 +2,11 @@
 
 <font size=2><div align='center' >  [[📖 arXiv Paper(Coming Soon)](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/VideoVista)] [[📊 Dataset ](https://huggingface.co/datasets/Uni-MoE/VideoVista)] </div></font>
 
-If you like our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.
+If you like our project, please consider giving us a star ⭐ on the Uni-MoE repository to stay updated with the latest developments.
 
 ---
 ## 🔥 News
-**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning. You can download the evaluation part of VideoVista from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).
+**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning. You can download the evaluation part of VideoVista from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).  We will release all 100k training data and enhanced Uni-MoE-v2 soon.
 
 ## 🌟 VideoVista Overview
 
@@ -14,7 +14,7 @@ Despite significant breakthroughs in video analysis driven by the rapid developm
 
 We introduce **VideoVista**, a video benchmark that integrates challenges across diverse content categories, durations, and abilities.  Specifically, VideoVista comprises **25,000** questions derived from **3,400** videos spanning **14** categories (e.g., Howto, Film, and Entertainment) with durations ranging from a few seconds to over 10 minutes. Besides, it encompasses **19** types of understanding tasks (e.g., anomaly detection, interaction understanding) and **8** reasoning tasks (e.g., logical reasoning, causal reasoning).
 
-We develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets. We will release it soon.
+We develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets.
 
 [//]: # ()
 [//]: # (<figure style="margin: 0; text-align: center;">)
