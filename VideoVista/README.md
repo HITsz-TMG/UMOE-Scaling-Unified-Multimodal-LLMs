@@ -8,6 +8,7 @@ If you like our project, please consider giving us a star ⭐ on the Uni-MoE rep
 ## 🔥 News
 
 **`2024.06.15`** 🚀 The evaluation code for VideoVista is released!
+
 **`2024.06.11`** 🚀 We release VideoVista, a Versatile Benchmark for Video Understanding and Reasoning. You can download the evaluation part of VideoVista from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).  We will release all 100k training data and enhanced Uni-MoE-v2 soon.
 
 ## 🌟 VideoVista Overview
@@ -119,7 +120,7 @@ The video_name attribute in the JSON file corresponds one-to-one with the video 
 
 When evaluating the Relation Reasoning-Image task, you also need to download [relation images](https://huggingface.co/datasets/Uni-MoE/VideoVista/blob/main/relation_images.zip) to obtain the queried images.
 
-During evaluation, you can add a Model_Answer attribute to the original VideoVista.json file to store the model's prediction results, and then use the [evaluation code](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/VideoVista/evaluation/evaluation_videovista.py) in the evaluation directory for assessment.
+During evaluation, you can add a Model_Answer attribute to the original VideoVista.json file to store the model's prediction results, and then use the [evaluation code](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/VideoVista/evaluation/evaluation_videovista.py) in the evaluation directory.
 
 For Chinese users experiencing slow download speeds with Hugging Face, you can use [HF-Mirror](https://hf-mirror.com/) to speed up downloads.
 
