@@ -14,7 +14,7 @@ Despite significant breakthroughs in video analysis driven by the rapid developm
 
 We introduce **VideoVista**, a video benchmark that integrates challenges across diverse content categories, durations, and abilities.  Specifically, VideoVista comprises **25,000** questions derived from **3,400** videos spanning **14** categories (e.g., Howto, Film, and Entertainment) with durations ranging from a few seconds to over 10 minutes. Besides, it encompasses **19** types of understanding tasks (e.g., anomaly detection, interaction understanding) and **8** reasoning tasks (e.g., logical reasoning, causal reasoning).
 
-We develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets.
+
 
 [//]: # ()
 [//]: # (<figure style="margin: 0; text-align: center;">)
@@ -26,6 +26,20 @@ We develop an automatic video annotation framework that efficiently creates larg
 [//]: # (</figure>)
 
 <div align=center><img src="asset/data_stastic.png" height="60%" width="60%"/></div>
+
+We develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets. The automatic process is shown in the following figure.
+
+[//]: # ()
+[//]: # (<figure style="margin: 0; text-align: center;">)
+
+[//]: # (    <img src="asset/model.png" alt="Image 1" style="width: 90%; display: block; margin: 0 auto;"/>)
+
+[//]: # (    <figcaption>Figure 1: Sample Count for Task Types</figcaption>)
+
+[//]: # (</figure>)
+
+<div align=center><img src="asset/model.png" height="60%" width="60%"/></div>
+
 
 ## 🗝️ Dataset Statistics
 <table>
