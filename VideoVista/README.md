@@ -6,7 +6,7 @@ If you like our project, please consider giving us a star ⭐ on GitHub to stay 
 
 ---
 ## 🔥 News
-**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning. You can download it from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).
+**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning. You can download the evaluation part of VideoVista from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).
 
 ## 🌟 VideoVista Overview
 
