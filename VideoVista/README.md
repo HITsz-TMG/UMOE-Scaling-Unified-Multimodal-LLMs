@@ -4,7 +4,7 @@
 
 ---
 ## 🔥 News
-**`2024.06.11`** 🚀 We are very proud to launch VideoVista, A Versatile Benchmark for Video Understanding and Reasoning.
+**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning.
 
 ## 🌟 VideoVista Overview
 
