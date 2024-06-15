@@ -2,9 +2,11 @@
 
 <font size=2><div align='center' >  [[📖 arXiv Paper(Coming Soon)](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/VideoVista)] [[📊 Dataset ](https://huggingface.co/datasets/Uni-MoE/VideoVista)] </div></font>
 
+If you like our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.
+
 ---
 ## 🔥 News
-**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning.
+**`2024.06.11`** 🚀 We release VideoVista, A Versatile Benchmark for Video Understanding and Reasoning. You can download it from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista).
 
 ## 🌟 VideoVista Overview
 
@@ -84,4 +86,9 @@ We introduce **VideoVista**, a video benchmark that integrates challenges across
 [//]: # (For each type of task, we also provide a text-based example.)
 
 [//]: # (![image/png]&#40;asset/Case.jpg&#41;)
+
+## Evaluation
+
+
+## Citation
 
