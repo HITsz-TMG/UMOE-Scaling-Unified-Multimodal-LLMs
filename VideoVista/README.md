@@ -114,7 +114,7 @@ When downloading videos, you may need to download all the zip files with differe
 
 ```shell
 cat merged.zip* > merged.zip
-unzip merge.zip
+unzip merged.zip
 ```
 The video_name attribute in the JSON file corresponds one-to-one with the video name.
 
