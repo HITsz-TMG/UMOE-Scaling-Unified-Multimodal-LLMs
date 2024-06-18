@@ -32,11 +32,12 @@ We introduce **VideoVista**, a video benchmark that integrates challenges across
     <td style="text-align: center;">
       <img src="asset/data_stastic.png" alt="Image 1-1" style="width: 100%;"/>
     </td>
-    <td style="text-align: center;">
+    <td style="text-align: right;">
       <img src="asset/ability.png" alt="Image 1-2" style="width: 95%;"/>
     </td>
   </tr>
 </table>
+
 
 To this end, we develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets. 
 The automatic process is shown in the following figure.
