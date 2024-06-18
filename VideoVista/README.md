@@ -155,3 +155,14 @@ For Chinese users experiencing slow download speeds with Hugging Face, you can u
 
 ## Citation
 
+If you find VideoVista useful for your research and applications, please cite using this BibTeX:
+```bibtex
+@misc{li2024videovista,
+      title={VideoVista: A Versatile Benchmark for Video Understanding and Reasoning}, 
+      author={Yunxin Li and Xinyu Chen and Baotian Hu and Longyue Wang and Haoyuan Shi and Min Zhang},
+      year={2024},
+      eprint={2406.11303},
+      archivePrefix={arXiv}
+}
+
+```
