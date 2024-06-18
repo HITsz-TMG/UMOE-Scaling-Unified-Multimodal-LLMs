@@ -1,6 +1,6 @@
 # VideoVista: A Versatile Benchmark for Video Understanding and Reasoning
 
-<font size=2><div align='center' >  [[📖 arXiv Paper(Coming Soon)](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master/VideoVista)] [[📊 Dataset ](https://huggingface.co/datasets/Uni-MoE/VideoVista)] </div></font>
+<font size=2><div align='center' >  [[📖 arXiv Paper](https://arxiv.org/abs/2406.11303)] [[📊 Dataset ](https://huggingface.co/datasets/Uni-MoE/VideoVista)] </div></font>
 
 If you like our project, please consider giving us a star ⭐ on the Uni-MoE repository to stay updated with the latest developments.
 
