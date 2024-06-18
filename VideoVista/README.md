@@ -31,15 +31,15 @@ We introduce **VideoVista**, a video benchmark that integrates challenges across
   <tr>
     <td style="text-align: center;">
       <img src="asset/data_stastic.png" alt="Image 1-1" style="width: 100%;"/>
-      <figcaption>Data statistics of VideoVista</figcaption>
     </td>
     <td style="text-align: center;">
-      <img src="asset/Category.png" alt="Image 1-22" style="width: 100%;"/>
-      <figcaption>All tasks distribution</figcaption>
+      <img src="asset/ability.png" alt="Image 1-2" style="width: 95%;"/>
     </td>
   </tr>
 </table>
-We develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets. The automatic process is shown in the following figure.
+
+To this end, we develop an automatic video annotation framework that efficiently creates large-scale training and evaluates VideoQA datasets. 
+The automatic process is shown in the following figure.
 
 [//]: # ()
 [//]: # (<figure style="margin: 0; text-align: center;">)
@@ -132,6 +132,24 @@ When evaluating the Relation Reasoning-Image task, you also need to download [re
 During evaluation, you can add a Model_Answer attribute to the original VideoVista.json file to store the model's prediction results, and then use the [evaluation code](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/VideoVista/evaluation/evaluation_videovista.py) in the evaluation directory.
 
 For Chinese users experiencing slow download speeds with Hugging Face, you can use [HF-Mirror](https://hf-mirror.com/) to speed up downloads.
+
+## :yum: Leaderboard
+
+| Model                  | Language Model | Frames | Unders. | Reason. | Overall |
+|------------------------|----------------|--------|---------|---------|---------|
+| VideoChat+ChatGPT | gpt-3.5-turbo  | 40     | 16.64   | 23.04   | 17.99   |
+| Video-LLAMA      | Vicuna-7B      | 16     | 25.40   | 25.16   | 25.35   |
+| Video-ChatGPT     | Vicuna-7B      | 100    | 36.09   | 38.73   | 36.65   |
+| IVA                | Vicuna-7B      | 200    | 37.38   | 48.38   | 39.70   |
+| Video-LLAVA      | Vicuna-7B      | 8      | 53.82   | 66.91   | 56.59   |
+| LLAMA-VID         | Vicuna-7B      | 1 fps  | 54.00   | 67.61   | 56.87   |
+| LLAVA-NeXT-Video   | Vicuna-7B      | 16     | 54.12   | 66.14   | 56.66   |
+| VideoChat2-Vicuna  | Vicuna-7B      | 16     | 51.79   | 60.55   | 53.64   |
+| VideoChat2-Mistral | Mistral-7B     | 16     | 54.91   | 65.95   | 57.24   |
+| Gemini-1.5-Flash       | Gemini         | 1 fps  | 74.73   | 82.30   | 76.39   |
+| GPT-4o (**Best** :rocket:)                | GPT-4o         | 100    | **75.15**   | **87.97**   | **78.26**   |
+
+
 
 
 ## Citation
