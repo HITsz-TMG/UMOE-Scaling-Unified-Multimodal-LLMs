@@ -81,7 +81,7 @@ for idx in range(len(golden)):
         pred_letter = pred[0]
     else:
         pred_letter = "none"
-    if pred_letter not in ["A", "B", "C", "D"] and len(pred) >= 1:
+    if pred_letter not in ["A", "B", "C", "D"] and len(pred) > 1:
         pred_letter = pred[1]
 
     
