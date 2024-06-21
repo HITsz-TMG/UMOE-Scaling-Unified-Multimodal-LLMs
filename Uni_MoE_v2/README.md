@@ -34,9 +34,8 @@ conda create -n unimoe_v2 python==3.9.16
 conda activate unimoe
 pip install -r env.txt
 conda install mpi4py
-pip install tutel git+https://github.com/microsoft/tutel@56dbd664341cf6485c9fa292955f77d3ac918a65
 pip install flash-attn==2.5.6
-pip install VideoFileClip
+pip install moviepy
 ```
 
 3. Replace all the absolute pathnames '/path/to/' or '/data/' with your specific path to the Uni-MoE file
