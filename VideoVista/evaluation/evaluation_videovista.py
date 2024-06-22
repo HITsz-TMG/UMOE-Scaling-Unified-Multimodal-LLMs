@@ -45,6 +45,10 @@ for p in prediction:
 all_types = []
 for idx in range(len(golden)):
     type = golden[idx]["Type"]
+
+    # If your model cannot support the evaluation of the relation reasoning task, uncomment the following two lines of code.
+    # if "relation reasoning" in type.lower():
+    #     continue
     all_types.append(type)
 
     total += 1
@@ -80,9 +84,7 @@ for idx in range(len(golden)):
     if len(pred) > 0:
         pred_letter = pred[0]
     else:
-        pred_letter = "none"
-    if pred_letter not in ["A", "B", "C", "D"] and len(pred) > 1:
-        pred_letter = pred[1]
+        pred_letter = ""
 
     
     if gold_letter == pred_letter:
