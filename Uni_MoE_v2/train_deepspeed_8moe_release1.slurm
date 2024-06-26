@@ -13,7 +13,7 @@ deepspeed --num_nodes 1 --num_gpus 8 \
     --deepspeed ./scripts/zero2.json \
     --model_name_or_path /path/to/Uni-MoE-speech-base  \
     --version v1 \
-    --data_path /path/to/data.json \
+    --data_path /path/to/data_with_infos.json \
     --vision_tower /path/to/clip-vit-large-patch14-336 \
     --audio_tower /path/to/whisper-small \
     --mm_projector_type mlp2x_gelu\
