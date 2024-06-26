@@ -133,7 +133,12 @@ deepspeed --num_gpus=2 --num_nodes=1 \
 ```
 
 
-## 🌈 How to evaluate on datasets
+## 🌈 How to train and evaluate on datasets
+
+Training:
+1. Make sure that all the weights are downloaded and the environment is set correctly, especially for the base model.
+2. Make sure that all the data are downloaded and pre-processed utilizing [`data_add_tokens_release.py`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/data_preprocess/data_add_tokens_release.py).
+3. Run training scripts: [`train_deepspeed_8moe_release1.slurm`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/train_deepspeed_8moe_release1.slurm) using ```bash train_deepspeed_8moe_release1.slurm``` ```sbatch train_deepspeed_8moe_release1.slurm```, remember to modify the training set with your own preference.
 
 Evaluation:
 1. Prepare the evaluation set using the form as [`samples.json`](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/data_sample/samples.json).
