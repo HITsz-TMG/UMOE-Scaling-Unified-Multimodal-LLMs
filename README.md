@@ -117,7 +117,6 @@ After downloading all of them, organize the weights as follows in 'Uni_MoE/check
 
 We use TTS technical to convert long text to speech to construct long speech understanding data.
 
-
 ### Evaluation Data
 | DataSet  | Input Type |
 |----------|----------|
@@ -143,6 +142,9 @@ We use TTS technical to convert long text to speech to construct long speech und
 We build a real speech understanding dataset to check the practical long speech recognition capabilities: [English-High-School-Listening](https://huggingface.co/datasets/VictorJsy/College-Entrance-English-Examination-Listening-Part/tree/main)
 It comprises 150 questions related to long audio segments with an average length of 109 seconds, and 50 questions about short audio segments with an average length of 14 seconds.
 
+### Experimental Results
+
+<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni-MoE-Experiments.png" height="100%" width="90%"/></div>
 
 ## 🌈 How to infer and deploy your demo
 
