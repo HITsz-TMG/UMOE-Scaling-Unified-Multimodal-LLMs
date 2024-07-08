@@ -7,6 +7,8 @@ If you like our project, please consider giving us a star ⭐ on the Uni-MoE rep
 ---
 ## 🔥 News
 
+**`2024.07.5`** 🚀 We add the evaluation results of more Video-LMMs (more than 20) in our [✨ Project Web ](https://videovista.github.io)
+
 **`2024.06.15`** 🚀 The evaluation code for VideoVista is released! **This is the first dataset that includes a wide variety of task types, with a particular emphasis on video safety detection and logical/relationship reasoning.**
 
 **`2024.06.11`** 🚀 We release VideoVista, a Versatile Benchmark for Video Understanding and Reasoning. You can download the evaluation part of VideoVista from [hugging face](https://huggingface.co/datasets/Uni-MoE/VideoVista). We will release all 100k training data and enhanced Uni-MoE-v2 soon.
