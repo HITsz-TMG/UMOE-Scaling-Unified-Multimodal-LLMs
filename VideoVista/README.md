@@ -136,6 +136,8 @@ For Chinese users experiencing slow download speeds with Hugging Face, you can u
 
 ## :yum: Leaderboard
 
+Details about more baselines are shown in [🏆 Leaderboard](https://videovista.github.io/#leaderboard)
+
 | Model                  | Language Model | Frames | Unders. | Reason. | Overall |
 |------------------------|----------------|--------|---------|---------|---------|
 | VideoChat+ChatGPT | gpt-3.5-turbo  | 40     | 16.64   | 23.04   | 17.99   |
