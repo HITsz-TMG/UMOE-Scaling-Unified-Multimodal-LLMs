@@ -31,7 +31,7 @@ cd UMOE-Scaling-Unified-Multimodal-LLMs/Uni_MoE_v2
 2. Install Package
 ```Shell
 conda create -n unimoe_v2 python==3.9.16
-conda activate unimoe
+conda activate unimoe_v2
 pip install -r env.txt
 conda install mpi4py
 pip install flash-attn==2.5.6
