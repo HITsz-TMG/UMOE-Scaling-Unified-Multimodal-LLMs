@@ -6,6 +6,7 @@ If you like our project, please consider giving us a star ⭐ on the Uni-MoE rep
 
 ---
 ## 🔥 News
+**`2024.07.19`** 🚀 There were over thirty models evaluated on the VideoVista dataset, and we provided the evaluation results for the newly released [GPT-4o-mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) model!
 
 **`2024.07.5`** 🚀 We add the evaluation results of more Video-LMMs (more than 20) in our [✨ Project Web ](https://videovista.github.io)
 
