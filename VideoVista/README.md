@@ -6,6 +6,9 @@ If you like our project, please consider giving us a star ⭐ on the Uni-MoE rep
 
 ---
 ## 🔥 News
+
+**`2024.08.29`** 🚀 We have continued to evaluate 38 large video models and open-sourced the automatically constructed VideoVista training set at [HuggingFace](https://huggingface.co/datasets/Uni-MoE/VideoVista_Train). 
+
 **`2024.07.19`** 🚀 There were over thirty models evaluated on the VideoVista dataset, and we provided the evaluation results for the newly released [GPT-4o-mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) model!
 
 **`2024.07.5`** 🚀 We add the evaluation results of more Video-LMMs (more than 20) in our [✨ Project Web ](https://videovista.github.io)
