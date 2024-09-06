@@ -89,6 +89,7 @@ python code/tools/delete_files.py --input processed_data/meta/split_action/actio
 
 ### Object annotation
 Similar to action annotation, follow these three steps:
+
 Step 1:
 ```shell
 python code/tools/gpt/annotate/object_annotate.py --audios processed_data/meta/split_audio/audio_change.json --frames processed_data/split_frames --save processed_data/meta/split_object/object --boxes processed_data/meta/split_boxes/video_boxes.json --video_titles processed_data/meta/panda_2m_validation_id2title.json --video_categorys processed_data/meta/panda_2m_validation_id2category.json
