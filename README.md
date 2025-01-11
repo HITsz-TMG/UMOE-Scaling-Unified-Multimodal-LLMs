@@ -21,6 +21,8 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 
 ## 🔥 News
 
+- [1/9]  🔥 Our paper has been accepted by **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**, 2025.
+
 - [8/28] 🔥 We release our video evaluation benchmark [VideoVista](https://videovista.github.io/) and the automatically generated video instruction tuning data [VideoVista-Train](https://huggingface.co/datasets/Uni-MoE/VideoVista_Train).
 
 - [5/31] 🔥 The checkpoint of Uni-MoE-v2 with 8 experts is now available for downloading and inference. For more details, please refer to the [Uni_MoE_v2_weights](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE_v2/README.md#%EF%B8%8F-uni-moe-weights) table. 
