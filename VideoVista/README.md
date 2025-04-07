@@ -7,9 +7,12 @@ If you like our project, please consider giving us a star ⭐ on the Uni-MoE rep
 ---
 ## 🔥 News
 
+
+**`2024.10.20`** 🚀 We release the video-text description pair data [VideoVista-Event](https://huggingface.co/datasets/Uni-MoE/VideoVista-Event) for the community. 
+
 **`2024.09.06`** 🚀 We release the automatic data generation framework for the community. 
 
-**`2024.08.29`** 🚀 We have continued to evaluate 38 large video models and open-sourced the automatically constructed VideoVista training set at [HuggingFace](https://huggingface.co/datasets/Uni-MoE/VideoVista_Train). 
+**`2024.08.29`** 🚀 We have continued to evaluate 38 large video models and open-sourced the automatically constructed VideoVista training set at [VideoVista Training Data](https://huggingface.co/datasets/Uni-MoE/VideoVista_Train). 
 
 **`2024.07.19`** 🚀 There were over thirty models evaluated on the VideoVista dataset, and we provided the evaluation results for the newly released [GPT-4o-mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) model!
 
