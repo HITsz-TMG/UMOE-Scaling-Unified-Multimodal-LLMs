@@ -214,12 +214,15 @@ We recommend using 80GB GPU RAM to run all experiments.
 If you find Uni-MoE useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 
-@ARTICLE{li_UniMoE,
+@ARTICLE{li_unimoe,
   author={Li, Yunxin and Jiang, Shenyuan and Hu, Baotian and Wang, Longyue and Zhong, Wanqi and Luo, Wenhan and Ma, Lin and Zhang, Min},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title={Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts}, 
+  title={Uni-MoE: Scaling Unified Multimodal LLMs With Mixture of Experts}, 
   year={2025},
-  pages={1-15},
+  volume={47},
+  number={5},
+  pages={3424-3439},
   doi={10.1109/TPAMI.2025.3532688}}
+
 
 ```
