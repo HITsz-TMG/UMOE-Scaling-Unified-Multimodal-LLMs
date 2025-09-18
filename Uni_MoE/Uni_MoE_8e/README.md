@@ -13,7 +13,7 @@ The model architecture of Uni-MoE is shown below. Three training stages contain:
 
 In the 8 expert edition of our model, we have integrated the DeepSpeed MoE architecture to facilitate the efficient distribution of experts' weights across various GPUs during both training and testing phases. This strategic design ensures balanced load allocation and enhanced parallel processing capabilities.Furthermore, we have introduced a novel LoRA integrated MLP to optimize the distribution mechanism to reduces computational complexity while ensuring the distribution function of DeepSpeed MOE still works.
 
-<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/model.png" height="100%" width="75%"/></div>
+<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/model.png" height="100%" width="75%"/></div>
 
 ## ⚡️ Install
 
