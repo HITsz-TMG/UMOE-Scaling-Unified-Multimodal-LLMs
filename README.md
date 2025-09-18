@@ -57,12 +57,12 @@ The model architecture of Uni-MoE is shown below. Three training stages contain:
 <div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/model.png" height="100%" width="75%"/></div>
 
 
-## Star History
+## 🙏 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs&type=Date)](https://star-history.com/#HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs&Date)
 
 
-## Citation
+## ❤️ Citation
 
 If you find Uni-MoE useful for your research and applications, please cite using this BibTeX:
 ```bibtex
