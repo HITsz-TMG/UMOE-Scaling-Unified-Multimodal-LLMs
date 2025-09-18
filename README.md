@@ -2,14 +2,11 @@
 <p align="center">
     <img src="https://s21.ax1x.com/2024/05/14/pkmtDSS.png" width="250" style="margin-bottom: 0.2;"/>
 <p>
-<h2 align="center"> <a href="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/">Uni-MoE: Scaling Unified Multimodal LLMs with Mixture of Experts</a></h2>
-<h5 align="center"> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h2>
-
 <h4 align="center">
 
 🚀 Welcome to the repo of **Uni-MOE**!
 
-Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalities including audio, speech, image, text, and video.
+Uni-MoE is a MoE-based unified multimodal model and can understand and generate omni modalities.
 
 [![🤗Hugging Face](https://img.shields.io/badge/🤗Hugging_Face-Uni_MoE-yellow)](https://huggingface.co/Uni-MoE)
 [![Project Page](https://img.shields.io/badge/Project_Page-Uni_MoE-blue)](https://uni-moe.github.io/)
@@ -18,8 +15,9 @@ Uni-MoE is a MoE-based unified multimodal model and can handle diverse modalitie
 
 [![](https://trendshift.io/api/badge/repositories/10407)](https://trendshift.io/repositories/10407)
 
-[Yunxin Li](https://yunxinli.github.io), [Shenyuan Jiang](URL), [Baotian Hu](https://faculty.hitsz.edu.cn/hubaotian), [Longyue Wang](http://www.longyuewang.com/), [Wanqi Zhong](URL), [Wenhan Luo](https://whluo.github.io/), [Lin Ma](https://forestlinma.com/), [Min Zhang](https://faculty.hitsz.edu.cn/MinZhang)
 </h4>
+
+<h4 align="center"> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h4>
 
 
 
