@@ -4,7 +4,7 @@
 
 </h4>
 
-<h4 align="center"> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h4>
+<h4> If you appreciate our project, please consider giving us a star ⭐ on GitHub to stay updated with the latest developments.  </h4>
 
 **Usage and License Notices**: The data and checkpoint are intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA and Vicuna. The dataset and models trained using the dataset should not be used outside of research purposes.
 
