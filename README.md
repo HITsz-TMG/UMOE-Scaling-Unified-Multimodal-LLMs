@@ -4,9 +4,9 @@
 <p>
 <h4 align="center">
 
-🚀 Welcome to the repo of **Uni-MOE**!
+🚀 Welcome to the repo of **Uni-MOE**
 
-Uni-MoE is a MoE-based unified multimodal model and can understand and generate omni modalities.
+Uni-MoE is a MoE-based unified multimodal model and can understand and generate omnimodalities.
 
 [![🤗Hugging Face](https://img.shields.io/badge/🤗Hugging_Face-Uni_MoE-yellow)](https://huggingface.co/Uni-MoE)
 [![Project Page](https://img.shields.io/badge/Project_Page-Uni_MoE-blue)](https://uni-moe.github.io/)
