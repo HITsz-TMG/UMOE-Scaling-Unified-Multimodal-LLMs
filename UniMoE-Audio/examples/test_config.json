@@ -1,0 +1,8 @@
+{
+  "model_path": "/path/to/UniMoE-Audio-preview",
+  "device_id": 0,
+  "output_base_dir": "./test_generated_audio",
+  "log_level": "INFO",
+  "log_file": "test_inference.log",
+  "max_concurrent_tasks": 1
+}

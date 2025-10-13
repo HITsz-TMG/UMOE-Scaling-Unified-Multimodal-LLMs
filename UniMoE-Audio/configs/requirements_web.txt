@@ -1,0 +1,15 @@
+# Minimal dependencies to run the UniMoE Audio Gradio web demo
+# Aligned with versions in configs/enviroment.yml where applicable
+
+# Core
+torch==2.1.1
+torchaudio==2.1.1
+transformers==4.53.1
+tokenizers==0.21.0
+huggingface-hub==0.30.0
+safetensors==0.6.2
+numpy==1.23.5
+loguru==0.7.3
+
+# UI
+gradio>=4.0,<5.0

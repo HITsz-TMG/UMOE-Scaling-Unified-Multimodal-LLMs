@@ -1,0 +1,46 @@
+{
+    "audio_prompts": {
+        "english": {
+            "female": {
+                "prompt": "They're calling to us not to give up and to keep on fighting!",
+                "audio_path": "assets/prompt_audios/en_female.wav",
+                "language": "en",
+                "gender": "female",
+                "description": "English female voice sample"
+            },
+            "male": {
+                "prompt": "Using script blockers is generally a good idea, but it requires the user to learn a bit.",
+                "audio_path": "assets/prompt_audios/en_male.wav",
+                "language": "en",
+                "gender": "male",
+                "description": "English male voice sample"
+            }
+        },
+        "chinese": {
+            "female": {
+                "prompt": "然而阿卡显然已经拿定主意，要援救黑老鼠。",
+                "audio_path": "assets/prompt_audios/zh_female.wav",
+                "language": "zh",
+                "gender": "female",
+                "description": "Chinese female voice sample"
+            },
+            "male": {
+                "prompt": "小偷却一点也不气馁，继续在抽屉里翻找。",
+                "audio_path": "assets/prompt_audios/zh_male.wav",
+                "language": "zh",
+                "gender": "male",
+                "description": "Chinese male voice sample"
+            }
+        }
+    },
+    "metadata": {
+        "version": "1.0",
+        "total_samples": 4,
+        "supported_languages": ["en", "zh"],
+        "supported_genders": ["male", "female"],
+        "audio_format": "wav",
+        "created_date": "2025-09-25",
+        "description": "Audio prompt samples for UniMoE-Audio model testing and demonstration",
+        "source": "SeedTTS Datasets"
+    }
+}

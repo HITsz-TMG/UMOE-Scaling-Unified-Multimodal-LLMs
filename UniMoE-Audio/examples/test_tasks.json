@@ -1,0 +1,30 @@
+[
+  {
+    "task_type": "text_to_music",
+    "task_id": "test_music_001",
+    "caption": "A gentle acoustic guitar melody with soft piano accompaniment, creating a peaceful and relaxing atmosphere",
+    "output_path": "./test_output/music"
+  },
+  {
+    "task_type": "text_to_music",
+    "task_id": "test_music_002",
+    "caption": "Upbeat electronic dance music with synthesizers and a strong bass line, perfect for energetic moments",
+    "output_path": "./test_output/music"
+  },
+  {
+    "task_type": "text_to_speech",
+    "task_id": "test_speech_001",
+    "target_text": "Hello, this is a test of the voice cloning technology. The system can generate speech that mimics the reference voice.",
+    "reference_audio": "/path/to/ref_audio1.wav",
+    "reference_text": "This is the original text from the reference audio file",
+    "output_path": "./test_output/speech"
+  },
+  {
+    "task_type": "text_to_speech",
+    "task_id": "test_speech_002",
+    "target_text": "Welcome to the UniMoE Audio framework demonstration. This technology can create high-quality synthetic speech.",
+    "reference_audio": "/path/to/ref_audio2.wav",
+    "reference_text": "This is the original text from the reference audio file",
+    "output_path": "./test_output/speech"
+  }
+]
