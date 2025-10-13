@@ -10,8 +10,7 @@
 
 # Welcome to the repo of **UniMoE-Audio**!
 
-### UniMoE-Audio: 
-### A Unified Speech and Music Generation via Dynamic-Capacity Mixture of Experts
+### UniMoE-Audio: A Unified Speech and Music Generation via Dynamic-Capacity Mixture of Experts
 <div align="left" style="line-height: 1;">
   |
   <a href="https://huggingface.co/foggy-frost-forest/UniMoE-Audio" target="_blank">🤗 HuggingFace</a>
@@ -28,20 +27,14 @@
 </div>
 
 
-## News
-
-- [2025-09-10] 🔥 We released **UniMoE-Audio-preview**. 
-<!-- Check out the [paper]() and [demo](). -->
-
-
 ## Performance Showcase
 
 | Prompt | Audio |
 |:--:|:--:|
-| This song contains several drum hits and percussive instruments playing a fast paced rhythm that motivates dancing along. An e-bass is bringing the low end supporting the drums. Cuatro guitars are strumming chords as a rhythmic addition. Trumpets are playing a loud and catchy melody. Some of the musical elements are slightly panned to the left and right side of the speakers. This song may be playing at a cheerful event. | <audio controls width="400" height="50"> <source src="https://github.com/foggy-frost-forest/UniMoE-Audio/raw/main/assets/audios/demo_1.mp3" type="audio/mpeg"> demo 1</audio> |
-| This song contains a digital drum playing a simple pattern with a kick and a snare sound. Synthesizers are playing a repeating melody in the higher register. Another synth sound is playing a more aggressive lead sound with a countermelody. A string sample is being used to create a short hit. This song may be playing during a car ride. |<audio controls width="400" height="50"><source src="https://github.com/foggy-frost-forest/UniMoE-Audio/raw/main/assets/audios/demo_2.mp3" type="audio/mpeg"> demo 2</audio> |
-| This is a four on the floor style of production. The song is a drum and bass type of song with a bright and fuzzy synth to add a melodic element. The first part of the song feels suspenseful. | <audio controls width="400" height="50"> <source src="https://github.com/foggy-frost-forest/UniMoE-Audio/raw/main/assets/audios/demo_3.mp3" type="audio/mpeg"> demo 3</audio>|
-| This is a rock music piece. There is a medium-to-high pitched electric guitar solo at the forefront. In the melodic background, a keyboard and a bass guitar repeating the same pattern can be heard. The acoustic drums are playing a loud and slightly fast-paced rock drum beat. There is a rebellious atmosphere to this piece. It can be used in the soundtrack of a teenage drama or a crime shootout audio game. | <audio controls width="400" height="50"> <source src="https://github.com/foggy-frost-forest/UniMoE-Audio/raw/main/assets/audios/demo_4.mp3" type="audio/mpeg"> demo 4</audio> |
+| This song contains several drum hits and percussive instruments playing a fast paced rhythm that motivates dancing along. An e-bass is bringing the low end supporting the drums. Cuatro guitars are strumming chords as a rhythmic addition. Trumpets are playing a loud and catchy melody. Some of the musical elements are slightly panned to the left and right side of the speakers. This song may be playing at a cheerful event. | <audio controls width="400" height="50"> <source src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/raw/main/UniMoE-Audio/assets/audios/demo_1.mp3" type="audio/mpeg"> demo 1</audio> |
+| This song contains a digital drum playing a simple pattern with a kick and a snare sound. Synthesizers are playing a repeating melody in the higher register. Another synth sound is playing a more aggressive lead sound with a countermelody. A string sample is being used to create a short hit. This song may be playing during a car ride. |<audio controls width="400" height="50"><source src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/raw/main/UniMoE-Audio/assets/audios/demo_2.mp3" type="audio/mpeg"> demo 2</audio> |
+| This is a four on the floor style of production. The song is a drum and bass type of song with a bright and fuzzy synth to add a melodic element. The first part of the song feels suspenseful. | <audio controls width="400" height="50"> <source src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/raw/main/UniMoE-Audio/assets/audios/demo_3.mp3" type="audio/mpeg"> demo 3</audio>|
+| This is a rock music piece. There is a medium-to-high pitched electric guitar solo at the forefront. In the melodic background, a keyboard and a bass guitar repeating the same pattern can be heard. The acoustic drums are playing a loud and slightly fast-paced rock drum beat. There is a rebellious atmosphere to this piece. It can be used in the soundtrack of a teenage drama or a crime shootout audio game. | <audio controls width="400" height="50"> <source src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/raw/main/UniMoE-Audio/assets/audios/demo_4.mp3" type="audio/mpeg"> demo 4</audio> |
 |||
 
 https://github.com/user-attachments/assets/08a9ee44-f62b-465f-9793-7e2a45573d29
@@ -94,7 +87,7 @@ The following instructions are for Linux installation.
 
 ### 1. Clone this repository and navigate to the UniMoE Audio folder
 ```bash
-git clone https://github.com/foggy-frost-forest/UniMoE-Audio.git
+git clone https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
 cd UniMoE-Audio 
 ```
 
