@@ -28,6 +28,8 @@
 
 
 Here is a short video below for an overview of our model and some showcases:
+
+
 <p align="center">
     <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513" width="80%" controls>
       抱歉，您的浏览器不支持内嵌视频。
