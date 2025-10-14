@@ -1,6 +1,6 @@
 # Dynamic Capacity MoE (Preview)
 
-Dynamic-Capacity Mixture-of-Experts (MoE) improves efficiency and adaptability in large models by introducing **dynamic expert allocation** and a flexible expert design.
+Dynamic-Capacity Mixture-of-Experts (DCMoE) improves efficiency and adaptability in large models by introducing **dynamic expert allocation** and a flexible expert design.
 
  **Dynamic-Capacity Routing**: Instead of using a fixed Top-K strategy, tokens are routed with a **Top-P mechanism** that selects the minimum number of experts needed to reach a probability threshold. This allows simple tokens to use fewer experts while complex ones leverage more, reducing wasted computation.  
  **Shared Experts**: A small set of always-active experts capture common knowledge across all inputs, offloading the routed experts to specialize in domain-specific patterns.  
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## Prepare Your Data
 
-We provide a sample dataset in the `./data` directory to help you get started. You can inspect the data format with the following Python code:
+We provide a dataset example in the `./data` directory to help you get started. You can inspect the data format with the following Python code:
 
 ```python
 import datasets
