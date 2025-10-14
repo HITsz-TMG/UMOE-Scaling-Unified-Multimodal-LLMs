@@ -18,7 +18,6 @@
     together with a hybrid expert design that separates domain-specific computation (routed expert), domain-agnostic computation (shared expert) and computation skipping (null expert). 
 </p>
 
-</div>
 
 <p align="center">
   <img src="assets/img/speech.png" alt="Performance of UniMoE-Audio" style="max-width: 100%; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(123, 179, 255, 0.15);">
@@ -27,7 +26,6 @@
   <img src="assets/img/music.png" alt="Performance of UniMoE-Audio" style="max-width: 100%; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(123, 179, 255, 0.15);">
 </p>
 
-</div>
 
 Here is a short video below for an overview of our model and some showcases:
 <p align="center">
