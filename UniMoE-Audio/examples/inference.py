@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simplified UniMoE Audio Inference Interface
+Simplified UniMoE-Audio Inference Interface
 
 Provides a simple function interface for audio generation tasks.
 Supports both programmatic calls and command-line usage.
@@ -37,7 +37,7 @@ def inference(
     video_path: Optional[str] = None
 ) -> Optional[str]:
     """
-    Simplified inference function for UniMoE Audio generation.
+    Simplified inference function for UniMoE-Audio generation.
     
     Args:
         task: Task type, either "text_to_music", "text_to_speech", or "video_text_to_music"
@@ -146,17 +146,18 @@ def main():
     parser = argparse.ArgumentParser(
         description="UniMoE Audio Inference - Simple Interface",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Generate music
-  python inference.py --task text_to_music --input "A peaceful piano melody" --output ./music_output
-  
-  # Generate speech with voice cloning
-  python inference.py --task text_to_speech --input "Hello world" --ref-audio ref.wav --ref-text "Reference text" --output ./speech_output
-  
-  # Specify custom model path
-  python inference.py --task text_to_music --input "Jazz music" --model /path/to/model --output ./output
-"""
+        epilog=
+            """
+                Examples:
+                # Generate music
+                python inference.py --task text_to_music --input "A peaceful piano melody" --output ./music_output
+                
+                # Generate speech with voice cloning
+                python inference.py --task text_to_speech --input "Hello world" --ref-audio ref.wav --ref-text "Reference text" --output ./speech_output
+                
+                # Specify custom model path
+                python inference.py --task text_to_music --input "Jazz music" --model /path/to/model --output ./output
+            """
     )
     
     parser.add_argument(

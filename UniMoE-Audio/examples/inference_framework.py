@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-UniMoE Audio Inference Framework
+UniMoE-Audio Inference Framework
 
 A flexible framework for batch audio generation with configurable parameters.
 Supports both text-to-music and text-to-speech generation with voice cloning.
