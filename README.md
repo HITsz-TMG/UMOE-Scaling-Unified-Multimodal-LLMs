@@ -36,7 +36,7 @@ Uni-MoE is a MoE-based unified multimodal model and can understand and generate 
 
 ## 📀 Demo Video
 
-### 👀 UniMoE-Audio model
+### 👀 UniMoE-Audio
 
 <div align="center">
     <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513#t=3" width="100%" style="margin: 0; padding: 0;" controls>
