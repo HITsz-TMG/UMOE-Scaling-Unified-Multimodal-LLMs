@@ -36,14 +36,14 @@ Uni-MoE is a MoE-based unified multimodal model and can understand and generate 
 
 ## 📀 Demo Video
 
-### 👀 The demo of our powerful UniMoE-Audio model!
+### 👀 UniMoE-Audio model
 
 <div align="center">
     <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513#t=3" width="100%" style="margin: 0; padding: 0;" controls>
     </video>
 </div>
 
-### 👀 The demo of Uni-MoE 1.0
+### 👀 Uni-MoE 1.0
 Demo 2 contains the real-time understanding of speech (Starting from 30S).
 
 https://private-user-images.githubusercontent.com/45393746/331798338-dfc848a2-1fd2-4f8d-9274-f21f7118ecd9.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYwMzUwOTUsIm5iZiI6MTcxNjAzNDc5NSwicGF0aCI6Ii80NTM5Mzc0Ni8zMzE3OTgzMzgtZGZjODQ4YTItMWZkMi00ZjhkLTkyNzQtZjIxZjcxMThlY2Q5Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTE4VDEyMTk1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYzYTNmZDNlM2FhOGE3MmM1MzM0Mzk4YTdlYTg3NTgzOTBmNzMyMjM4OTljYTA0ODQ0YmEzZDVlYmFhOWUwMzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vrqxhusaq3J_ULQKbeGOxEJH3wry6GjXLxwrFrP0jao
@@ -53,7 +53,7 @@ https://private-user-images.githubusercontent.com/45393746/331798343-fcd3eb7e-3d
 
 ## 🎨 Case Show
 
-### The cases of Uni-MoE 1.0
+### Uni-MoE 1.0
 
 <div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/case_figure.png" height="100%" width="75%"/></div>
 
