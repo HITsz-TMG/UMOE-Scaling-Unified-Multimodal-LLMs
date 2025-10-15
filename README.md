@@ -34,20 +34,28 @@ Uni-MoE is a MoE-based unified multimodal model and can understand and generate 
 - [2024/3/7] 🔥 We released **Uni-MOE: Scaling Unified Multimodal LLMs with Mixture of Experts**. We proposed the development of a unified Multimodal LLM (MLLM) utilizing the MoE framework, which can process diverse modalities, including audio, image, text, and video.  Checkout the [paper](https://arxiv.org/abs/2405.11273) and [demo](https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/tree/master?tab=readme-ov-file#-demo-video).
 
 
-
-## 🎨 Case Show
-
-The cases of Uni-MoE
-
-<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/case_figure.png" height="100%" width="75%"/></div>
-
 ## 📀 Demo Video
+
+The demo of our powerful UniMoE-Audio model!
+
+<p align="center">
+    <video src="https://github.com/user-attachments/assets/37bba89b-67de-432f-8efe-847b53a54513" width="80%" controls>
+    </video>
+</p>
+
 
 Demo 2 contains the real-time understanding of speech (Starting from 30S).
 
 https://private-user-images.githubusercontent.com/45393746/331798338-dfc848a2-1fd2-4f8d-9274-f21f7118ecd9.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYwMzUwOTUsIm5iZiI6MTcxNjAzNDc5NSwicGF0aCI6Ii80NTM5Mzc0Ni8zMzE3OTgzMzgtZGZjODQ4YTItMWZkMi00ZjhkLTkyNzQtZjIxZjcxMThlY2Q5Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTE4VDEyMTk1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYzYTNmZDNlM2FhOGE3MmM1MzM0Mzk4YTdlYTg3NTgzOTBmNzMyMjM4OTljYTA0ODQ0YmEzZDVlYmFhOWUwMzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vrqxhusaq3J_ULQKbeGOxEJH3wry6GjXLxwrFrP0jao
 
 https://private-user-images.githubusercontent.com/45393746/331798343-fcd3eb7e-3dfa-4470-a2e6-b9b140efe0fa.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYwMzUyNTEsIm5iZiI6MTcxNjAzNDk1MSwicGF0aCI6Ii80NTM5Mzc0Ni8zMzE3OTgzNDMtZmNkM2ViN2UtM2RmYS00NDcwLWEyZTYtYjliMTQwZWZlMGZhLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTE4VDEyMjIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIyNWU5OTM0NjM1MTgzMWIxNWI4MDllYzU5NWNlOTUxMGI1NzQ5MzkyNmRlNDFlMTY0YzYzMTJmZjk4ZjJmMWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Uz3PBfKbEjl5ZOfUSXrAaQQLrvKwCFK2uNPTjtKG3dU
+
+
+## 🎨 Case Show
+
+The cases of Uni-MoE
+
+<div align=center><img src="https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs/blob/master/Uni_MoE/case_figure.png" height="100%" width="75%"/></div>
 
 
 ## 🌟 Model Structure
