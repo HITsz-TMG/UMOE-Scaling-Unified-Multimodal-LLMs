@@ -2,7 +2,7 @@
 
 <div align="center" style="display: flex; justify-content: center; margin-top: 10px;">
   <a href="https://mukioxun.github.io/Uni-MoE-site/home.html"><img src="https://img.shields.io/badge/📰 -Website-228B22" style="margin-right: 5px;"></a>
-  <a href="docs/UniMoE_Audio-Paper.pdf"><img src="https://img.shields.io/badge/📄-Paper-8A2BE2" style="margin-right: 5px;"></a>
+  <a href="https://arxiv.org/abs/2510.13344"><img src="https://img.shields.io/badge/📄-Paper-8A2BE2" style="margin-right: 5px;"></a>
   <a href="https://huggingface.co/foggyforest/UniMoE-Audio-preview"><img src="https://img.shields.io/badge/🤗-Checkpoints-ED5A22.svg" style="margin-right: 5px;"></a>
 </div>
 
@@ -14,7 +14,7 @@
     enabling high-fidelity speech and expressive music within a single model.
 </p>
 <p>
-    To address data imbalance and task conflicts, UniMoE-Audio introduces <strong>a Top-P routing strategy</strong>for adaptive expert number allocation, 
+    To address data imbalance and task conflicts, UniMoE-Audio introduces <strong>a Top-P routing strategy</strong> for adaptive expert number allocation, 
     together with a hybrid expert design that separates domain-specific computation (routed expert), domain-agnostic computation (shared expert) and computation skipping (null expert). 
 </p>
 
@@ -61,17 +61,6 @@ We recommend using conda to install the environment.
 conda env create -f configs/enviroment.yml      # add -n for your name
 conda activate unimoe-audio                     # default name
 ```
-then install the torch packages
-  ```bash
-   # Use the official index
-   pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
-   
-   # Use Tsinghua mirror source
-   pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 -i https://pypi.tuna.tsinghua.edu.cn/simple/ --extra-index-url https://download.pytorch.org/whl/cu121
-   
-   # Use Alibaba Cloud mirror source
-   pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://download.pytorch.org/whl/cu121
-   ```
 A `dac model` is also required to be downloaded in '/path/to/UniMoE-Audio/utils/dac_model'.
 It will be automatically downloaded when running the first time.
 
