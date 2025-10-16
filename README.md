@@ -23,6 +23,8 @@ Uni-MoE is a MoE-based unified multimodal model and can understand and generate 
 
 ## 🔥 News
 
+- [2025/8/6] 🔥 We release a better [UniMoE-Audio](https://github.com/HITsz-TMG/Uni-MoE/tree/master/UniMoE-Audio), the first audio generation model with a unified speech and music generation.
+
 - [2025/8/6] 🔥 We release a better Uni-MoE v1.5 at modelscope [here](https://www.modelscope.cn/models/victorjsyy/Uni-MoE) with a unified speech encoding approach.
 
 - [2025/1/9]  🔥 Our paper has been accepted by **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**, 2025.
