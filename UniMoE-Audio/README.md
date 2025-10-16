@@ -123,3 +123,20 @@ pip install -r configs/requirements_web.txt
 python web_demo.py --model /path/to/your/model
 ```
 
+## Citation
+
+```
+Please cite the repo if you use the model or code in this repo.
+
+@article{liu2025unimoeaudiounifiedspeechmusic,
+      title={UniMoE-Audio: Unified Speech and Music Generation with Dynamic-Capacity MoE}, 
+      author={Zhenyu Liu and Yunxin Li and Xuanyu Zhang and Qixun Teng and Shenyuan Jiang and Xinyu Chen and Haoyuan Shi and Jinchao Li and Qi Wang and Haolan Chen and Fanbo Meng and Mingjun Zhao and Yu Xu and Yancheng He and Baotian Hu and Min Zhang},
+      year={2025},
+      journal={arXiv preprint arXiv:2510.13344},
+      url={https://arxiv.org/abs/2510.13344}, 
+}
+```
+
+## Contract
+
+If you encounter any issue, feel free to contact us via the email: liuzhenyuhit@gmail.com
